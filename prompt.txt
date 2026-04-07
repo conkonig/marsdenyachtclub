@@ -1,0 +1,6 @@
+Inside the templates folder, there are three files:
+- Venues Code
+- Events Code
+- Home Code
+Can you run the following transformation and output files into our static folder? What it does is basically just create one styles.css and one scripts.js if that's necessary, and then the index.html and the venue.html and whatever the thing files were. Whatever the name_code was, that name just becomes the file. As we move the files into the static folder, we're just cleaning them up so that they should have all the same nav bar that we get from the home page. That nav bar should be where it says, and if in the nav bar it says "Venue", that should click through to the venue.html template.
+Basically, we're taking those raw template design files and putting them into a static folder and transforming them into a format where there are just nice clean templates that are importing one consistent stylesheet where the styles have all been added so that they're not conflicting with each other. That way the site is ready to deploy to GitHub Pages.

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Events | Marsden Cove Yacht Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="page-shell bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <header class="site-header fixed top-0 left-0 right-0 z-50 shadow-[0_32px_64px_-12px_rgba(27,29,14,0.06)]">
+      <nav class="w-full max-w-screen-2xl mx-auto px-6 md:px-8 py-5">
+        <div class="flex items-center justify-between gap-6">
+          <a class="site-logo text-2xl font-black text-[#001e40] uppercase tracking-wider font-headline" href="./index.html">
+            Marsden Cove Yacht Club
+          </a>
+          <ul class="hidden md:flex gap-8 items-center">
+            <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html">Home</a></li>
+            <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html#about">About Us</a></li>
+            <li><a class="site-nav-link text-[#001e40] font-headline font-bold tracking-tight" data-active="true" href="./events.html">Events</a></li>
+            <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./venue.html">Venue Hire</a></li>
+            <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html#membership">Membership</a></li>
+          </ul>
+          <div class="flex items-center gap-4">
+            <a class="hidden md:inline-flex nautical-gradient text-on-primary px-8 py-3 rounded-full font-headline font-extrabold tracking-wide scale-95 active:scale-90 transition-transform" href="./index.html#membership">
+              JOIN THE CLUB
+            </a>
+            <button aria-expanded="false" aria-label="Toggle navigation" class="md:hidden text-primary p-2" data-menu-toggle type="button">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="site-menu-panel hidden md:hidden mt-4 rounded-2xl bg-white shadow-lg border border-black/5" data-mobile-menu data-open="false">
+          <div class="flex flex-col p-4 text-base font-headline font-bold">
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html">Home</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#about">About Us</a>
+            <a class="px-4 py-3 rounded-xl bg-surface-container-low text-primary" href="./events.html">Events</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./venue.html">Venue Hire</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#membership">Membership</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-[88px]">
+      <section class="relative h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img alt="Coastal View" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEhCnuh_v2AgKXY3AcOfl_DUDQLsH_zIAkergCGB7ZXcyXQZDVwRXJV7nIrQjutGmNU4qF-yG55L0lk8xJ9WoEwTc4Fs0QM8-jDpkq56o1cpw1TUbw-pMf9JlVELd8K4dWsBdxzBX_AiECPGHtlNs1K5nZuGKojtqMBcI_RcQeOAe81vD3YRWUpmOx8zIX06dxg5yS7o_jNQqeTcWdLZY4XcA-CggPFJKIm3-teNO-FdNccdf8woEZaISxNqUp9ZUz1X6E9peiLTU" />
+          <div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+        </div>
+        <div class="relative z-10 text-center px-6">
+          <span class="inline-block text-on-tertiary-container font-bold tracking-[0.3em] uppercase mb-4 text-sm">Experience the Coast</span>
+          <h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight mb-8">WHAT'S ON AT MARSDEN</h1>
+          <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex items-center gap-3 bg-white/10 backdrop-blur-xl px-6 py-3 rounded-full text-white border border-white/20">
+              <span class="material-symbols-outlined text-secondary-container">sailing</span>
+              <span class="text-sm font-semibold">Active Season 2024</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/10 backdrop-blur-xl px-6 py-3 rounded-full text-white border border-white/20">
+              <span class="material-symbols-outlined text-secondary-container">location_on</span>
+              <span class="text-sm font-semibold">Marsden Cove Marina</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-screen-xl mx-auto px-8 -mt-12 relative z-20">
+        <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_32px_64px_-12px_rgba(27,29,14,0.06)] flex flex-wrap items-center justify-between gap-6">
+          <div class="flex bg-surface-container-low p-1 rounded-xl">
+            <button class="bg-surface-container-lowest text-primary px-8 py-2.5 rounded-lg shadow-sm font-bold text-sm transition-all" type="button">MONTH VIEW</button>
+            <button class="text-on-surface/50 px-8 py-2.5 rounded-lg font-bold text-sm hover:text-primary transition-all" type="button">LIST VIEW</button>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface/40">filter_list</span>
+              <select class="pl-12 pr-10 py-2.5 bg-surface-container-low border-none rounded-xl text-sm font-bold focus:ring-2 focus:ring-secondary-container appearance-none min-w-[200px]">
+                <option>All Event Types</option>
+                <option>Racing</option>
+                <option>Social</option>
+                <option>Workshops</option>
+              </select>
+            </div>
+            <div class="flex gap-2">
+              <button class="p-2.5 bg-surface-container-low rounded-xl text-primary hover:bg-primary hover:text-white transition-all" type="button">
+                <span class="material-symbols-outlined">chevron_left</span>
+              </button>
+              <button class="p-2.5 bg-surface-container-low rounded-xl text-primary hover:bg-primary hover:text-white transition-all" type="button">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-screen-xl mx-auto px-8 py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Pub Quiz" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9sTxp1esmDClO28yzuydT7S9W260hzmmLEO6wXPqU1hSSE91a5jAgMjtwaIqAerA7WM7-PnqRIBFKaNsVX31KA0z7v6Uz2DLwASyjRZ690T5tib_R4DY56_L5i2Jsv3wG7DvylA1CzFOjz9sEKEyhCjw8iML2Ocak2CRvA782BQFzdq0Gr6t3xrd479FXN-wjlz3gDOA3_BuN8EMdL-hd89qZ3Waue4stsLaYfxoBSgJNqt1siAodYcO6q0Q6vUl0o8O1PdJ1VYo" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">JUL</span>
+                <span class="block text-2xl font-black leading-none">12</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Social</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Pub Quiz Night</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">Join us for a night of wit and friendly rivalry. Bring your team or join one on the night. Prizes for the winning tables!</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Winter Rum Race" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEnUcZeBnK8YFH0dlqRvJ4gRR-mjot35ajsgE9rh_80DeipYS7CqVk3l_3tL2GSAotiLWPZkKnVq2yj0WBYTHWZ2_3AnowGCzqhVU77_pDgZDZXGzWCYk8xheRhakwGvpIfZbOY_CMl003p3ssLLc5MxWQ1ZR4xhO81fw0LCTkQhKbbXbAKqalUf-GWFhtKzxZqTIjEtsRWi-DVeukkEMhmCmjT5iIWPCgaK7KTKXoMSVYT_b5b3cLXilxpfjHtcLKAks-ze_S0FA" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">JUL</span>
+                <span class="block text-2xl font-black leading-none">15</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Racing</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Winter Rum Race Series</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">Test your skills in the crisp winter air. The series continues with race number four. Rum prizes await at the clubhouse post-race.</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Market" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdL_kf_EzjAUvba47dcYr1wEZ_BA44AdMyP-B3ryk-oRTJT0sKr9cYLz-0QT-Me578GoZXjH9q3lWwYvvGYLQBPJ4lcJCEV1YpmdG5N-hmfm0dPANgfyry_fGouL0jZ-iTcbNR7pEzV1kd-1Q51X1E6jm0ry6rhwjpph-cLgUtLBq04F0i-k0kfzVFyE2hhd2F-j1RAuifSFksZzBHxfnUXjAi9nI9k4KaWVy0MMnLZGlMNZyunkTwwtJvtAeLLwS3wsVgN6aaoCg" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">JUL</span>
+                <span class="block text-2xl font-black leading-none">20</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Community</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Local Craft &amp; Produce Market</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">The monthly market returns to the club grounds. Discover local makers, bakers, and growers from the Bream Bay region.</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Youth Sailing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhkhJEmXTTTWGGR_HLz-QmLmaQM77bKaXVAv-Luw-uQ58Vn5B4CubE1krcpOMpcTlpPYW8edARyf_VeFHBTSKDloNLR2kKwvQsMY2zIA0iDevw2s8ltI-wvGQePjOlhzWRurIF7N2t7SGYj-9JZJHhZ3boed8EwIB1_aDHytazsYEgn7IJpzfXZUbT5kpZOYGo1M5V9q2mGo2wYhb3VIg9N-6ZcXMx-GWmm2OI1sZmnfgznNqfkH5Mi7EM1rEKP3LHeXUvA9K7a_4" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">JUL</span>
+                <span class="block text-2xl font-black leading-none">24</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Youth</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Youth Sailing Programme</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">Winter session for our young sailors. Focusing on boat handling and navigation safety in the protected cove waters.</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Dinner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrKVjkvCHHUN-6GvBM8b83SsSFK1cMleb3Evx03OB2vWOHC0ph-wGxLwVH4924x45C-RZ046q1EvF39gzjzU-WAOPMUWRKRB6NXTPcpnquBXCtnki_NuiiP6haJ0QwbKrtWirvB4HuaiFg0961Rk59qmot3KVB0F8wfTDdHM0RtKxrlfEsb6ULgkQcReOZhZmqWcXKEZifpwkzR6w0Y5VaMtlXf1KkZBkfJJneDesZghlXr6WsNl1zXUBoQjICllZ-RMhvst1cSXM" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">JUL</span>
+                <span class="block text-2xl font-black leading-none">28</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Social</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Club Mid-Winter Dinner</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">Our annual flagship social event. A three-course gourmet feast prepared by our chef, celebrating the spirit of the club.</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-[0_48px_80px_-16px_rgba(27,29,14,0.1)] transition-all duration-500 flex flex-col h-full">
+            <div class="relative h-64 overflow-hidden">
+              <img alt="Fishing Briefing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLVBN1vAVQxUwYg8hV6iY9ntu5AJPX7VUwrkRgpQ_1UYBWmrkOWXd37kTTDugTa4iTIyBq6AUigcTzLUJ9ufo_A04qs7Ls_6Otm2mOJMOAgTYd0dgLssObIb-q-nd214szRve7EJSu_TX7foFw8zsCnY5LM_AfBKRQzSgs01C42kAPpIxXePyIX9e3mcX4FnFkckpIORTiJGTL4YzGaQtOAvcntJMcAzIIEal6NAPLqfws445oKVqlvC7F4fcWTK9GZDlyLZrqQzk" />
+              <div class="absolute top-4 left-4 bg-secondary-container text-white p-3 rounded-xl text-center min-w-[60px]">
+                <span class="block text-xs font-bold uppercase tracking-tighter">AUG</span>
+                <span class="block text-2xl font-black leading-none">02</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">Briefing</div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-primary mb-3 leading-tight">Fishing Competition Briefing</h3>
+              <p class="text-on-surface/70 text-sm leading-relaxed mb-6 flex-grow">Mandatory safety briefing and rules overview for the upcoming Bream Bay Classic Fishing Competition.</p>
+              <button class="text-secondary font-bold text-sm flex items-center gap-2" type="button">
+                READ MORE
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-screen-xl mx-auto px-8 pb-24">
+        <div class="bg-primary-container rounded-[2rem] p-12 md:p-20 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-secondary-container/20 to-transparent"></div>
+          <div class="relative z-10 max-w-2xl">
+            <h2 class="text-white text-3xl md:text-4xl font-bold mb-6">Never Miss an Anchor Point</h2>
+            <p class="text-on-primary-container text-lg mb-10 leading-relaxed">Subscribe to our monthly "Compass" newsletter for event updates, racing results, and marina news delivered directly to your inbox.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+              <input class="flex-grow bg-white/10 border-white/20 text-white placeholder-white/50 rounded-xl px-6 py-4 focus:ring-secondary-container focus:border-secondary-container" placeholder="Your email address" type="email" />
+              <button class="bg-secondary-container text-on-primary font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform" type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#001e40] w-full py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm leading-relaxed">
+      <div>
+        <span class="text-xl font-bold text-[#fbfbe2] mb-4 block font-headline uppercase tracking-widest">Marsden Cove Yacht Club</span>
+        <p class="text-[#fbfbe2]/60 mb-6">Promoting yachting and aquatic activities in the beautiful Bream Bay since inception.</p>
+        <div class="flex gap-4">
+          <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#fbfbe2] hover:bg-secondary-container transition-colors" href="#">
+            <span class="material-symbols-outlined">share</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#fbfbe2] hover:bg-secondary-container transition-colors" href="#">
+            <span class="material-symbols-outlined">sailing</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-[#fbfbe2] font-bold mb-6 uppercase tracking-wider text-xs">Quick Links</h4>
+        <ul class="space-y-4">
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="./index.html">Home</a></li>
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="./index.html#membership">Membership</a></li>
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="./venue.html">Facility Hire</a></li>
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="./events.html">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-[#fbfbe2] font-bold mb-6 uppercase tracking-wider text-xs">Contact Us</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary-container text-lg">location_on</span>
+            <span class="text-[#fbfbe2]/60">123 Marina Drive,<br />Marsden Cove, Whangarei</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-secondary-container text-lg">mail</span>
+            <a class="text-[#fbfbe2]/60 hover:text-[#fd8b00]" href="mailto:info@mcyc.co.nz">info@mcyc.co.nz</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-[#fbfbe2] font-bold mb-6 uppercase tracking-wider text-xs">Legal</h4>
+        <ul class="space-y-4">
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="#">Privacy Policy</a></li>
+          <li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-all" href="#">Terms of Service</a></li>
+        </ul>
+        <div class="mt-8 pt-8 border-t border-white/10">
+          <p class="text-[#fbfbe2]/40 text-[10px] uppercase tracking-widest">© 2024 Marsden Cove Yacht Club. Anchored in Excellence.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

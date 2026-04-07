@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marsden Cove Yacht Club | Anchored in Excellence</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary": "#904d00",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#d5e3ff",
+                        "on-tertiary-container": "#e98024",
+                        "primary-container": "#003366",
+                        "on-error": "#ffffff",
+                        "surface": "#fbfbe2",
+                        "tertiary-container": "#532700",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "surface-container-high": "#eaead1",
+                        "error-container": "#ffdad6",
+                        "outline": "#737780",
+                        "on-secondary-container": "#603100",
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-low": "#f5f5dc",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1d0e",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "surface-variant": "#e4e4cc",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#43474f",
+                        "surface-bright": "#fbfbe2",
+                        "surface-container": "#efefd7",
+                        "surface-tint": "#3a5f94",
+                        "on-tertiary-fixed": "#301400",
+                        "inverse-surface": "#303221",
+                        "on-background": "#1b1d0e",
+                        "tertiary": "#341600",
+                        "secondary-fixed": "#ffdcc3",
+                        "background": "#fbfbe2",
+                        "surface-container-highest": "#e4e4cc",
+                        "primary": "#001e40",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2f1500",
+                        "tertiary-fixed": "#ffdcc5",
+                        "surface-dim": "#dbdcc3",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d1",
+                        "on-primary-fixed": "#001b3c",
+                        "inverse-primary": "#a7c8ff",
+                        "on-primary-container": "#799dd6",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "secondary-container": "#fd8b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .nautical-gradient {
+            background: linear-gradient(135deg, #fd8b00 0%, #e98024 100%);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0, 30, 64, 0.4), rgba(0, 30, 64, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#fbfbe2] dark:bg-[#1b1d0e] shadow-[0_32px_64px_-12px_rgba(27,29,14,0.06)]">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#001e40] dark:text-[#fbfbe2] uppercase tracking-wider font-headline">
+                Marsden Cove Yacht Club
+            </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-[#001e40] dark:text-[#fbfbe2] border-b-2 border-[#fd8b00] pb-1 font-headline font-bold tracking-tight" href="#">Home</a></li>
+<li><a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#">About Us</a></li>
+<li><a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#">Events</a></li>
+<li><a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#">Venue Hire</a></li>
+<li><a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#">Membership</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button class="hidden md:block nautical-gradient text-on-primary px-8 py-3 rounded-full font-headline font-extrabold tracking-wide scale-95 active:scale-90 transition-transform">
+                    JOIN THE CLUB
+                </button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full overflow-hidden flex items-center px-8 md:px-16 lg:px-24">
+<div class="absolute inset-0 z-0">
+<img alt="Yachts in Marsden Cove" class="w-full h-full object-cover" data-alt="Cinematic wide shot of white yachts moored in a calm blue marina at Marsden Cove during a soft golden sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrdYdgiZ24rFzUvJ1tKsDFI5KFkFGvbbVw7XKMVxdTSgAGIV0Io4DYf_7XWoO2jXHYxiHBNdVhf1vbypnB6tlss93VdOBUxEI2GZH91LdW358HHKUE40MPi16gNQdxcZC2-LbyS02H5yOFOLW7S0NxZPg2PkMhLs3N9si3ASGx7GSrZ6x6pLb47rYP-iAjhIF196eNJ0lrvUrvjfbjPi0z_mDge1kGwILcMnQ1YA2BPyXBeMHH_6Y-d4q53fUyxrrv5BSySdNtcIs"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="inline-block px-4 py-1 mb-6 rounded-full bg-secondary-container/20 border border-secondary-container/30 text-secondary-container font-headline text-sm font-bold tracking-[0.2em] uppercase backdrop-blur-md">
+                    Est. 2005 • Northland, NZ
+                </span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-headline font-extrabold text-on-primary leading-[1.1] mb-8 tracking-tighter">
+                    WELCOME TO <br/>
+<span class="text-secondary-container">MARSDEN YACHT</span><br/>
+                    AND BOAT CLUB
+                </h1>
+<p class="text-xl md:text-2xl text-on-primary/80 font-body max-w-2xl leading-relaxed mb-12">
+                    Discover the heart of Northland's nautical community. From competitive racing to social sunsets on the deck, find your harbor with us.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="nautical-gradient text-on-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg tracking-wide shadow-xl hover:shadow-secondary-container/20 transition-all">
+                        EXPLORE MEMBERSHIP
+                    </button>
+<button class="bg-surface-container-lowest/10 backdrop-blur-md border border-white/20 text-on-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg tracking-wide hover:bg-white/20 transition-all">
+                        VIEW CALENDAR
+                    </button>
+</div>
+</div>
+</section>
+<!-- Stats Floating Bar -->
+<div class="max-w-6xl mx-auto -mt-16 relative z-20 px-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_64px_-12px_rgba(27,29,14,0.08)] grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-primary font-headline font-black text-3xl mb-1">450+</div>
+<div class="text-on-surface-variant/70 text-sm font-bold tracking-widest uppercase">Members</div>
+</div>
+<div class="text-center border-l border-outline-variant/20">
+<div class="text-primary font-headline font-black text-3xl mb-1">120</div>
+<div class="text-on-surface-variant/70 text-sm font-bold tracking-widest uppercase">Boat Slips</div>
+</div>
+<div class="text-center border-l border-outline-variant/20">
+<div class="text-primary font-headline font-black text-3xl mb-1">24</div>
+<div class="text-on-surface-variant/70 text-sm font-bold tracking-widest uppercase">Annual Races</div>
+</div>
+<div class="text-center border-l border-outline-variant/20">
+<div class="text-primary font-headline font-black text-3xl mb-1">15°C</div>
+<div class="text-on-surface-variant/70 text-sm font-bold tracking-widest uppercase">Current Water</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Events Section -->
+<section class="py-24 px-8 max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-primary font-headline font-extrabold text-4xl md:text-5xl mb-4 tracking-tight">Upcoming Events</h2>
+<p class="text-on-surface-variant font-body text-lg max-w-md">Join us for a season of excitement on and off the water.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-secondary font-headline font-bold text-lg group" href="#">
+                    Full Calendar
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Event 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="relative h-64">
+<img alt="Pub Quiz Night" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cozy interior of a pub with warm wooden furniture and people gathered around tables in a friendly social atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVoVvt0HAr4upX-SRhDwY9As0i0mnlS-9_1UFYJCF1BWv_E7V9DebC4kIAjU7hPzYofCZjzMk3-ehQkBiKI0e73sdFTMK-S79NJkYnhDz_Nbk2spdw5bZ6A8nl3IEUKAkHj-5kDvLm_qSlpjln3uh6MsGYovGi1TIHxhYeMl209LPCFYg55Y3FKUXO0qQlZtrbXDHJYPrSSIWBBvq8FD4719_diy60hC_UafvpF7vxm_uNLqTOEqDZ5Yk63_ydGKM308Lmt3jego"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-center">
+<span class="block text-xl">18</span>
+<span class="text-xs uppercase tracking-tighter">OCT</span>
+</div>
+</div>
+<div class="p-8">
+<span class="text-secondary-container font-headline text-xs font-black tracking-widest uppercase mb-2 block">Social Evening</span>
+<h3 class="text-primary font-headline font-bold text-2xl mb-4">Pub Quiz Night</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Test your trivia skills and enjoy local craft brews at our monthly community quiz gathering.</p>
+<div class="flex items-center gap-4 text-on-surface-variant/70 text-sm font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">schedule</span> 19:00 PM</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">location_on</span> Main Lounge</span>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="relative h-64">
+<img alt="Rum Races" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Several small sailboats racing on sparkling blue water with white sails catching the afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCky5JSJUyhvk1sP6oOJ4uC6JoeFnSKNk2L8ngnBRIFYtKu6Und_CGt-74_e68KulMUznS9KzoF90sP5T3q7WPlhaiAHhRsGAdnJ9lgR2x6NRtjsNi_7pYv-SPb3CuEnEDm8NYX439gx5M4O8iM95B6Zi6eMqsCK4Ytw6qizSSGCbKEnZ2Vv8rQ5q-dXR1VOI88eSADNIYZKx8mWkituOTq5V3raAvHKMgMVNPl1ZNYRGmuX50F_rgc_73Yh9mxcrQAvpY8mh7XoAc"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-center">
+<span class="block text-xl">20</span>
+<span class="text-xs uppercase tracking-tighter">OCT</span>
+</div>
+</div>
+<div class="p-8">
+<span class="text-secondary-container font-headline text-xs font-black tracking-widest uppercase mb-2 block">Competitive Racing</span>
+<h3 class="text-primary font-headline font-bold text-2xl mb-4">Rum Races Series</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Our signature Friday afternoon series. Quick sprints followed by drinks and debrief at the bar.</p>
+<div class="flex items-center gap-4 text-on-surface-variant/70 text-sm font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">schedule</span> 16:30 PM</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">location_on</span> Marina Entrance</span>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="relative h-64">
+<img alt="Yacht Racing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Action shot of a sleek modern yacht leaning into the wind with crew members in performance gear visible on deck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXK2cn_keFZrAT9oUPe5ERnCSTmsHzwcCIh9k0UWED8pC01aHI3jEAaEAhVNrJnQjCi4sd1Fa0Lk0Ci60IBk7HIEh_UFxwKGlWJfpVIDkDWqBxNnRHGF36mfRVHNdWPqIlL6bnxWOIvNPlbOdDHncu3E2K9paULtFcMGxSe0Wsd2e5sNiGjNrDan5HFMXgs-5Mvn_OP_jVBuwZltC63AzYTVsbv4aIAvFKeVWXGhsIzpRLUVWTaam0M_nIoLfEi3FgO3-bDqWGDqQ"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-center">
+<span class="block text-xl">25</span>
+<span class="text-xs uppercase tracking-tighter">OCT</span>
+</div>
+</div>
+<div class="p-8">
+<span class="text-secondary-container font-headline text-xs font-black tracking-widest uppercase mb-2 block">Championship</span>
+<h3 class="text-primary font-headline font-bold text-2xl mb-4">Summer Open Yacht Racing</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">The premier event of the month. All classes welcome for a day of high-stakes nautical skill.</p>
+<div class="flex items-center gap-4 text-on-surface-variant/70 text-sm font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">schedule</span> 09:00 AM</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">location_on</span> Regatta Course</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Venue Hire Section -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-primary font-headline font-extrabold text-4xl md:text-6xl mb-6 tracking-tight">Venue Hire</h2>
+<p class="text-on-surface-variant font-body text-xl max-w-3xl mx-auto">From intimate weddings to corporate retreats, celebrate your milestones overlooking the pristine Marsden Cove Marina.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Venue Card 1 -->
+<div class="group relative h-[600px] rounded-xl overflow-hidden cursor-pointer shadow-lg">
+<img alt="Host Your Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Elegant indoor event space with long tables set for dinner, large glass windows showing a marina view at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ_zbTvOP9UtH9cZHE20GIIU8BmM0kcooPnC_N6NNgPLkBB8jCOWyKcXV4jr8BPWloBxZAAZh95pXko4AY8S6_L_8RVaMV47vFHUBJ28SISSCe_BxZbZMLgPlv6e8wwsuQXla_5uqfThEi7dDv99LwZWK2pXp751Yvs9SaOSC671GFgXBrqqMn2yWR7QoJfBozmt1KCkjzg5F09z12wgliEN08jJgJ76QXhvBwAtpy14_OfNkFGVW8Rf_dGfxRYXCNjMG63-ueFZU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-0 p-12 w-full">
+<h3 class="text-on-primary font-headline font-extrabold text-4xl mb-4">HOST YOUR EVENT</h3>
+<p class="text-on-primary/80 text-lg mb-8 max-w-md">The Main Lounge offers a versatile space for up to 150 guests with professional catering facilities.</p>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-headline font-black uppercase tracking-widest text-sm hover:bg-secondary-container hover:text-on-primary transition-all">
+                                ENQUIRE NOW
+                            </button>
+</div>
+</div>
+<!-- Venue Card 2 -->
+<div class="group relative h-[600px] rounded-xl overflow-hidden cursor-pointer shadow-lg">
+<img alt="Waterfront Deck" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Wide wooden outdoor deck with modern lounge chairs overlooking blue ocean water and yachts under a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr4IDF6MGoY55R6sNxt-EWwdrCVBSE9duEOz0zsQ_FKjKlr0hmRt2MgnL-R1OxZI5BKKK3rhp4tLGd1yx0N0eC7gHOUwZ7YjCc-Bz2AzUtZnSd8tL5hnO-1Y11-edyylWEjjNU2p60Z_dONE0Cg7g5lLZM26SWWhpUPC58Ul3bKxJBvmU-xTSOuSAV0Qk4H6e7mstuXd8CviHVuFKSqXzxUu1SDEzJlKZQyfgCBRTfoi9krs3PtpWc8uzG0BKSUnICEsiyyLRhu7U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-0 p-12 w-full">
+<h3 class="text-on-primary font-headline font-extrabold text-4xl mb-4">WATERFRONT DECK</h3>
+<p class="text-on-primary/80 text-lg mb-8 max-w-md">Experience the sea breeze. Our expansive deck is the perfect spot for sun-drenched cocktails and networking.</p>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-headline font-black uppercase tracking-widest text-sm hover:bg-secondary-container hover:text-on-primary transition-all">
+                                VIEW GALLERY
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto nautical-gradient rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<h2 class="text-on-primary font-headline font-extrabold text-4xl md:text-5xl mb-6 relative z-10">Stay In The Loop</h2>
+<p class="text-on-primary/90 font-body text-xl mb-12 max-w-2xl mx-auto relative z-10">Get the latest racing results, upcoming social event news, and marina updates delivered directly to your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto relative z-10">
+<input class="flex-1 px-8 py-5 rounded-full bg-surface-container-lowest border-none text-primary focus:ring-2 focus:ring-primary font-medium" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-extrabold tracking-wide hover:bg-primary-container transition-all">
+                        SUBSCRIBE
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 bg-[#001e40]">
+<div class="md:col-span-1">
+<span class="text-xl font-bold text-[#fbfbe2] mb-4 block font-headline uppercase tracking-widest">Marsden Cove Yacht Club</span>
+<p class="text-[#fbfbe2]/60 text-sm leading-relaxed mb-6 font-body">
+                The premier hub for nautical enthusiasts in Northland. Anchored in tradition, sailing towards the future.
+            </p>
+<div class="flex gap-4">
+<a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] transition-colors" href="#"><span class="material-symbols-outlined">waves</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-[#fbfbe2] font-headline font-bold text-lg mb-6">Quick Links</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Membership info</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Club House Rules</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Slip Rentals</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Annual Reports</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#fbfbe2] font-headline font-bold text-lg mb-6">Support</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Contact Us</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#fbfbe2] font-headline font-bold text-lg mb-6">Find Us</h4>
+<address class="not-italic text-[#fbfbe2]/60 text-sm leading-relaxed font-body">
+                12 Marina View Road,<br/>
+                Marsden Cove, Whangarei 0118<br/>
+                New Zealand<br/>
+<span class="block mt-4 text-[#fbfbe2]">T: +64 9 432 0123</span>
+<span class="text-[#fbfbe2]">E: hello@marsdencoveyachtclub.co.nz</span>
+</address>
+</div>
+<div class="md:col-span-4 pt-12 border-t border-[#fbfbe2]/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="text-[#fbfbe2]/60 text-sm font-body">© 2024 Marsden Cove Yacht Club. Anchored in Excellence.</span>
+<div class="flex gap-8">
+<img alt="Sponsor 1" class="h-8 opacity-40 grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Subtle grey logo of a marine equipment brand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj6atgtPRYgj1Ngp0HG4z3vslRWykwtdY02EO__PRNd6WmUxAO6KWdugOyUqv4sTdHgo-DrCZG1w4On5TbA6wUbjiTZ459ds0HG_LVjpfMzih8XdX5_6fRkR0pEEY6CNUiMXSETCMt58O3AWBm2_Gj4bjiUZe66CxNFx0gtRX09pGLPw-bZd_V6kJO8dn0ArRv6pqbKq9U5eKXAC1Pg9e3EPqsrz-PM-vQYE3YHqDvGdG5aMEPXMmxVDyTd2AcuvjuGEC9iktqKWg"/>
+<img alt="Sponsor 2" class="h-8 opacity-40 grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Subtle grey logo of a yacht insurance company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcx_culLURZmH0iAMcbb9cA2rPU9ZAj4Gnk8ZoGG9xzQA-57olp3MFhF6QqGWF-O6WqenWZYjF56plh0DozlAbIzoKsZj-ejmwC5XV20NDe9RW9o_-RtmS2TLTn7hoOtPux9JFJs-pzYhJNwwHqvwc1c2HQTYFYW3qfAY9KBW1K8KXJPVRXk1sbTD29WoSpgM6BS6uYX9JfVr090MWudCkbbyEwrm-CljGDq9GvAf-EBEL-bgQs0MYMOc8L8Feo0dQg7HTfLN2SMM"/>
+</div>
+</div>
+</footer>
+</body></html>

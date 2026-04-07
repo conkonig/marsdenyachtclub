@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary": "#904d00",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#d5e3ff",
+                        "on-tertiary-container": "#e98024",
+                        "primary-container": "#003366",
+                        "on-error": "#ffffff",
+                        "surface": "#fbfbe2",
+                        "tertiary-container": "#532700",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "surface-container-high": "#eaead1",
+                        "error-container": "#ffdad6",
+                        "outline": "#737780",
+                        "on-secondary-container": "#603100",
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-low": "#f5f5dc",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1d0e",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "surface-variant": "#e4e4cc",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#43474f",
+                        "surface-bright": "#fbfbe2",
+                        "surface-container": "#efefd7",
+                        "surface-tint": "#3a5f94",
+                        "on-tertiary-fixed": "#301400",
+                        "inverse-surface": "#303221",
+                        "on-background": "#1b1d0e",
+                        "tertiary": "#341600",
+                        "secondary-fixed": "#ffdcc3",
+                        "background": "#fbfbe2",
+                        "surface-container-highest": "#e4e4cc",
+                        "primary": "#001e40",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2f1500",
+                        "tertiary-fixed": "#ffdcc5",
+                        "surface-dim": "#dbdcc3",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d1",
+                        "on-primary-fixed": "#001b3c",
+                        "inverse-primary": "#a7c8ff",
+                        "on-primary-container": "#799dd6",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "secondary-container": "#fd8b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#fbfbe2] dark:bg-[#1b1d0e] shadow-[0_32px_64px_-12px_rgba(27,29,14,0.06)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#001e40] dark:text-[#fbfbe2] uppercase tracking-wider font-headline">
+                Marsden Cove Yacht Club
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline hover:text-[#fd8b00] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline hover:text-[#fd8b00] transition-colors duration-300" href="#">About Us</a>
+<a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline hover:text-[#fd8b00] transition-colors duration-300" href="#">Events</a>
+<a class="text-[#001e40] dark:text-[#fbfbe2] border-b-2 border-[#fd8b00] pb-1 font-headline" href="#">Venue Hire</a>
+<a class="text-[#001e40]/70 dark:text-[#fbfbe2]/70 font-medium font-headline hover:text-[#fd8b00] transition-colors duration-300" href="#">Membership</a>
+</div>
+<button class="bg-gradient-to-r from-secondary-container to-on-tertiary-container text-white px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide scale-95 active:scale-90 transition-transform">
+                JOIN THE CLUB
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sun-drenched event hall" class="w-full h-full object-cover" data-alt="wide angle interior of a luxurious modern yacht club hall with floor to ceiling glass doors, overlooking sparkling blue ocean water at golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRD3X7M2qq3_MdzDJdznnmNp48IFG86sAqE-Np665AAF7NtDEQwK8-WzPsClP8E1bTiuMxu2FJ0OAj-o0Zo7Ex5GqMrRlQdF7bjC9iV1QRQwQyZertYlxi6kLdOM222zijNO50GQIUJqowg6X12VtG07f3-lQqQ6qAd-ru3bijMOBfFFI8DFSYfP29oInLlRGKaqwTE_lsqLLDiQzHhoqReQ-F99Oh1aCCgFBD35BoEGzSuhhKfjb3m2sGANezPwLAR1K0cmTo6A"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<span class="inline-block px-4 py-1.5 mb-6 bg-secondary-container text-on-primary font-label text-xs font-bold tracking-[0.2em] rounded-full uppercase">Premier Event Space</span>
+<h1 class="text-5xl md:text-8xl font-headline font-extrabold text-white tracking-tighter mb-8 drop-shadow-2xl">
+                    MARSDEN VENUE HIRE <br class="hidden md:block"/> &amp; FACILITIES
+                </h1>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="bg-gradient-to-r from-secondary-container to-on-tertiary-container text-white px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl hover:scale-105 transition-transform" href="#enquire">Book a Tour</a>
+<a class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-white/20 transition-all" href="#spaces">Explore Spaces</a>
+</div>
+</div>
+</section>
+<!-- Our Spaces Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="spaces">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4 tracking-tight">Our Spaces</h2>
+<div class="h-1.5 w-24 bg-secondary-container rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Main Hall: Asymmetric Bento Style -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl transition-all duration-500">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="The Main Hall" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="large elegant ballroom with high ceilings, white drapes, and circular tables decorated for a coastal wedding reception" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdouNRKYWIlJSC747601ZYxSUzFiIZ6CXohGM1ypxOfTicLV-KESzNwjlr7IWA1V34Y5PaV0dnX7l9yjtY_O4itsTX4HlGNpkt-7GYcLMjRgy2ZEG3PqbywgoFUBhgxjahOa39lfgCGjDAvfy51tLeNAW2Q4qL_J60cG6QTXJ9Nh1II-KDRrFGXT-Q78BRsag5opmL-G8qJcDYXU-KK1b1744yiXi4YRIjrWEgE4Bwae_SG1xAx9BwmRKtez7aNVOF35AkeBeFsTY"/>
+</div>
+<div class="p-8">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">THE MAIN HALL</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">Our flagship space, boasting panoramic views of the Marsden Cove Marina. Flexible seating arrangements for up to 200 guests with direct access to the waterfront boardwalk.</p>
+<div class="flex gap-4">
+<span class="inline-flex items-center gap-2 text-primary font-bold"><span class="material-symbols-outlined text-secondary-container">groups</span> 200 Capacity</span>
+<span class="inline-flex items-center gap-2 text-primary font-bold"><span class="material-symbols-outlined text-secondary-container">square_foot</span> 450 m²</span>
+</div>
+</div>
+</div>
+<!-- Bar & Lounge -->
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-xl transition-all duration-500 flex-1">
+<div class="aspect-square overflow-hidden">
+<img alt="The Bar &amp; Lounge" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="sophisticated club bar with dark wood textures, leather seating, and warm accent lighting reflecting in cocktail glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd9Oqdt_Wex64ipVHpCBQwmICBbUtmXz1TTaUljK5AjBKZQ40ySW6T-tcQZoqVAdntrH-Zp06js6KxicnEPYfbKuvC7qtIb4mWhYXTtgv3sE1N5p_P4uKwkkUhibv2ZP2wjWYJ4KgM5EbfPAhCm3Eq9uRrIHpnOnCNx6evJTnRnNJSt7uzi275xsV0msjDkW0hjGPrzdalK0haofTx5Pg_ZKLa_wyx4WVYfH3k4nypGF5LnoHDsHXfhTTstdiCCwPN7rBZUyQWpA"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-headline font-bold text-primary mb-2">THE BAR &amp; LOUNGE</h3>
+<p class="text-on-surface-variant text-sm">An intimate setting for smaller gatherings or cocktail hours.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-xl transition-all duration-500 flex-1">
+<div class="aspect-square overflow-hidden">
+<img alt="The Ocean Deck" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="expansive outdoor wooden deck with glass railings overlooking the blue water and marina docks at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9UqQ6DA281Hloig60cd2xJI4lwt524ynbgpkTSvIu-pZHjs0Am4_Lmrfu6iuT8ebywpvm4RLsB_B3KP3O1ngcx-Dbjbr_jJbOApMxw6PUQ6WpIT6do9vIO3YqfZ7Oz_wUmb9GZcYzzHz1hIVffqmoXJaaQCUoSvbXqzZ5j_t75rTs-cGdWupnn5-sUHDc1huL9hKwrYU8y5l0zWlkOdNvt3nh0sz976Qz9N0sn_vkytnYLvuI5Znn84synPmp5Y6m8RO_-Ob3cQ"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-headline font-bold text-primary mb-2">THE OCEAN DECK</h3>
+<p class="text-on-surface-variant text-sm">Breathtaking alfresco space for sunset ceremonies and receptions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Features -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4 tracking-tight">World-Class Facilities</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto italic">Every detail considered for your seamless event experience.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary-container">restaurant</span>
+</div>
+<h4 class="font-headline font-bold text-primary mb-2">Commercial Kitchen</h4>
+<p class="text-sm text-on-surface-variant">Full catering capabilities on-site.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary-container">wine_bar</span>
+</div>
+<h4 class="font-headline font-bold text-primary mb-2">Licensed Bar</h4>
+<p class="text-sm text-on-surface-variant">Extensive beverage and staff service.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary-container">settings_voice</span>
+</div>
+<h4 class="font-headline font-bold text-primary mb-2">AV &amp; Sound</h4>
+<p class="text-sm text-on-surface-variant">State-of-the-art multimedia system.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary-container">wifi</span>
+</div>
+<h4 class="font-headline font-bold text-primary mb-2">Complimentary WiFi</h4>
+<p class="text-sm text-on-surface-variant">High-speed guest network connectivity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Enquiry Form Section -->
+<section class="py-24 px-8 relative overflow-hidden" id="enquire">
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_64px_128px_-24px_rgba(27,29,14,0.1)] border border-outline-variant/10">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-headline font-extrabold text-primary mb-4 tracking-tight">ENQUIRE NOW</h2>
+<p class="text-on-surface-variant">Let's create something unforgettable together. Tell us about your event.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Email</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Phone</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="+64 000 000 000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Event Type</label>
+<select class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
+<option>Wedding</option>
+<option>Corporate Seminar</option>
+<option>Birthday / Celebration</option>
+<option>Community Event</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Estimated Guests</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="e.g. 150" type="number"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label font-bold text-primary tracking-wider uppercase">Message</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Tell us more about your requirements..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-gradient-to-r from-secondary-container to-on-tertiary-container text-white py-5 rounded-full font-headline font-black text-lg tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl uppercase" type="submit">
+                                SUBMIT ENQUIRY
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 bg-[#001e40] font-body">
+<div class="md:col-span-1">
+<span class="text-xl font-bold text-[#fbfbe2] mb-4 block font-headline">Marsden Cove Yacht Club</span>
+<p class="text-[#fbfbe2]/60 text-sm leading-relaxed mb-6">Experience maritime excellence and premium hospitality on the shores of Marsden Cove.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#fbfbe2]/60 hover:text-[#fd8b00] cursor-pointer transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#fbfbe2]/60 hover:text-[#fd8b00] cursor-pointer transition-colors">share</span>
+</div>
+</div>
+<div>
+<h5 class="text-[#fbfbe2] font-bold mb-6 font-headline">Navigation</h5>
+<ul class="space-y-4">
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Home</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">About Us</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Events</a></li>
+<li><a class="text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Venue Hire</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#fbfbe2] font-bold mb-6 font-headline">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-[#fbfbe2]/60 hover:text-[#fd8b00] underline-offset-4 hover:underline transition-opacity text-sm" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#fbfbe2] font-bold mb-6 font-headline">Contact</h5>
+<p class="text-[#fbfbe2]/60 text-sm mb-2">Marsden Cove Marina</p>
+<p class="text-[#fbfbe2]/60 text-sm mb-2">Northland, New Zealand</p>
+<p class="text-[#fbfbe2]/60 text-sm mb-6">hello@marsdenyc.co.nz</p>
+<span class="text-xs text-[#fbfbe2]/40 block mt-8">© 2024 Marsden Cove Yacht Club. Anchored in Excellence.</span>
+</div>
+</footer>
+
+```</body></html>

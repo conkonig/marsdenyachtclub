@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#003366",
+                        "on-primary": "#ffffff",
+                        "secondary": "#fd8b00",
+                        "surface": "#f5f1e6",
+                        "on-surface": "#1b1d0e",
+                        "outline": "#737780",
+                        "accent": "#e91e63"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "8px",
+                        "lg": "12px",
+                        "xl": "16px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient-btn {
+            background: linear-gradient(90deg, #ff5e3a, #ff2a68, #c231a1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<!-- Header / Navigation -->
+<header class="bg-white px-6 py-4 flex justify-between items-center shadow-sm">
+<div class="flex items-center gap-2">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl">sailing</span>
+<span class="text-[10px] font-black uppercase tracking-tighter text-primary">Marsden Cove</span>
+<span class="text-[8px] font-bold uppercase tracking-[0.2em] text-primary -mt-1">Yacht Club</span>
+</div>
+</div>
+<div class="hidden md:block">
+<h1 class="text-3xl font-black text-center text-on-surface uppercase tracking-tighter">
+            Marsden Venue Hire &amp; Facilities
+        </h1>
+</div>
+<button class="border border-on-surface px-4 py-1.5 rounded text-sm font-bold flex items-center gap-2 uppercase">
+        Menu <span class="material-symbols-outlined text-lg">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative">
+<div class="w-full h-[500px] overflow-hidden">
+<img alt="Marsden Cove Yacht Club Interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRD3X7M2qq3_MdzDJdznnmNp48IFG86sAqE-Np665AAF7NtDEQwK8-WzPsClP8E1bTiuMxu2FJ0OAj-o0Zo7Ex5GqMrRlQdF7bjC9iV1QRQwQyZertYlxi6kLdOM222zijNO50GQIUJqowg6X12VtG07f3-lQqQ6qAd-ru3bijMOBfFFI8DFSYfP29oInLlRGKaqwTE_lsqLLDiQzHhoqReQ-F99Oh1aCCgFBD35BoEGzSuhhKfjb3m2sGANezPwLAR1K0cmTo6A"/>
+</div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
+<div class="hero-gradient-btn p-[2px] rounded-xl shadow-xl">
+<button class="bg-white text-on-surface px-10 py-3 rounded-lg font-bold text-sm uppercase tracking-wide">
+                    Book Your Event
+                </button>
+</div>
+</div>
+</section>
+<!-- Our Spaces Section -->
+<section class="pt-24 pb-16 px-6 max-w-7xl mx-auto">
+<h2 class="text-4xl font-black text-center text-on-surface uppercase tracking-tight mb-12">Our Spaces</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Main Hall -->
+<div class="space-y-4">
+<h3 class="text-lg font-black uppercase tracking-tight">The Main Hall</h3>
+<div class="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+<img alt="The Main Hall" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdouNRKYWIlJSC747601ZYxSUzFiIZ6CXohGM1ypxOfTicLV-KESzNwjlr7IWA1V34Y5PaV0dnX7l9yjtY_O4itsTX4HlGNpkt-7GYcLMjRgy2ZEG3PqbywgoFUBhgxjahOa39lfgCGjDAvfy51tLeNAW2Q4qL_J60cG6QTXJ9Nh1II-KDRrFGXT-Q78BRsag5opmL-G8qJcDYXU-KK1b1744yiXi4YRIjrWEgE4Bwae_SG1xAx9BwmRKtez7aNVOF35AkeBeFsTY"/>
+</div>
+<p class="text-sm text-on-surface/80 leading-relaxed">
+                    Spacious hall for large gatherings, weddings, and conferences. Accommodates up to 200 guests. Stage area and dance floor available.
+                </p>
+</div>
+<!-- Bar & Lounge -->
+<div class="space-y-4">
+<h3 class="text-lg font-black uppercase tracking-tight">The Bar &amp; Lounge</h3>
+<div class="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+<img alt="The Bar &amp; Lounge" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd9Oqdt_Wex64ipVHpCBQwmICBbUtmXz1TTaUljK5AjBKZQ40ySW6T-tcQZoqVAdntrH-Zp06js6KxicnEPYfbKuvC7qtIb4mWhYXTtgv3sE1N5p_P4uKwkkUhibv2ZP2wjWYJ4KgM5EbfPAhCm3Eq9uRrIHpnOnCNx6evJTnRnNJSt7uzi275xsV0msjDkW0hjGPrzdalK0haofTx5Pg_ZKLa_wyx4WVYfH3k4nypGF5LnoHDsHXfhTTstdiCCwPN7rBZUyQWpA"/>
+</div>
+<p class="text-sm text-on-surface/80 leading-relaxed">
+                    Cozy area with a fully licensed bar, comfortable seating, and direct access to the deck. Perfect for cocktails and smaller parties.
+                </p>
+</div>
+<!-- Ocean Deck -->
+<div class="space-y-4">
+<h3 class="text-lg font-black uppercase tracking-tight">The Ocean Deck</h3>
+<div class="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+<img alt="The Ocean Deck" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9UqQ6DA281Hloig60cd2xJI4lwt524ynbgpkTSvIu-pZHjs0Am4_Lmrfu6iuT8ebywpvm4RLsB_B3KP3O1ngcx-Dbjbr_jJbOApMxw6PUQ6WpIT6do9vIO3YqfZ7Oz_wUmb9GZcYzzHz1hIVffqmoXJaaQCUoSvbXqzZ5j_t75rTs-cGdWupnn5-sUHDc1huL9hKwrYU8y5l0zWlkOdNvt3nh0sz976Qz9N0sn_vkytnYLvuI5Znn84synPmp5Y6m8RO_-Ob3cQ"/>
+</div>
+<p class="text-sm text-on-surface/80 leading-relaxed">
+                    Expansive outdoor deck with panoramic ocean and marina views. Ideal for ceremonies and sunset receptions.
+                </p>
+</div>
+</div>
+</section>
+<!-- Key Features Section -->
+<section class="py-16 px-6 bg-surface">
+<h2 class="text-4xl font-black text-center text-on-surface uppercase tracking-tight mb-16">Key Features</h2>
+<div class="grid grid-cols-3 md:grid-cols-6 gap-8 max-w-5xl mx-auto">
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+<span class="text-xs font-bold leading-tight">Commercial<br/>Kitchen</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">wine_bar</span>
+<span class="text-xs font-bold leading-tight">Licensed<br/>Bar</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">volume_up</span>
+<span class="text-xs font-bold leading-tight">AV &amp; Sound<br/>System</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">waves</span>
+<span class="text-xs font-bold leading-tight">Stunning<br/>Ocean Views</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">directions_car</span>
+<span class="text-xs font-bold leading-tight">Ample<br/>Parking</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-3xl">accessible</span>
+<span class="text-xs font-bold leading-tight">Accessible<br/>Facilities</span>
+</div>
+</div>
+</section>
+<!-- Enquiry Form Section -->
+<section class="relative pt-24 pb-48">
+<div class="absolute inset-x-0 bottom-0 h-64 bg-primary z-0"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-6">
+<div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 border border-on-surface/5">
+<h2 class="text-4xl font-black text-center text-on-surface uppercase tracking-tight mb-10">Enquire Now</h2>
+<form class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Name" type="text"/>
+<input class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Email Address" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<input class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none md:col-span-1" placeholder="Phone Number" type="tel"/>
+<select class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none md:col-span-1 text-on-surface/60">
+<option>Event Type</option>
+<option>Wedding</option>
+<option>Corporate</option>
+<option>Private Party</option>
+</select>
+<input class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none md:col-span-1" placeholder="Estimated Guests" type="number"/>
+<input class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none md:col-span-1" onfocus="(this.type='date')" placeholder="Date" type="text"/>
+</div>
+<textarea class="w-full border border-outline rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none h-32" placeholder="Message"></textarea>
+<button class="w-full bg-accent text-white py-4 rounded-lg font-bold uppercase tracking-widest text-sm shadow-lg hover:brightness-110 transition-all" type="submit">
+                        Submit Enquiry
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-5xl">sailing</span>
+<div>
+<h3 class="text-2xl font-black uppercase tracking-tight leading-none">Fishy Stories.</h3>
+<h3 class="text-2xl font-black uppercase tracking-tight leading-none">Good Times!</h3>
+</div>
+</div>
+<div class="text-center md:text-right space-y-1">
+<p class="text-xs text-white/60">© 2022, all rights reserved</p>
+<p class="text-xs text-white/60">Site by Online Designs</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap justify-center gap-6 text-sm font-bold">
+<a class="hover:text-accent transition-colors" href="#">Contact</a>
+<a class="hover:text-accent transition-colors" href="#">Safety</a>
+<a class="hover:text-accent transition-colors" href="#">Club Rules</a>
+<a class="hover:text-accent transition-colors" href="#">Our Committee</a>
+</div>
+<div class="bg-black/20 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white cursor-pointer hover:text-accent transition-colors">facebook</span>
+</div>
+</div>
+</footer>
+</body></html>

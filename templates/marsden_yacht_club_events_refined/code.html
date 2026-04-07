@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary": "#904d00",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#d5e3ff",
+                        "on-tertiary-container": "#e98024",
+                        "primary-container": "#003366",
+                        "on-error": "#ffffff",
+                        "surface": "#EAE5D7",
+                        "tertiary-container": "#532700",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "surface-container-high": "#eaead1",
+                        "error-container": "#ffdad6",
+                        "outline": "#737780",
+                        "on-secondary-container": "#603100",
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-low": "#f5f5dc",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1d0e",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "surface-variant": "#e4e4cc",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#43474f",
+                        "surface-bright": "#fbfbe2",
+                        "surface-container": "#efefd7",
+                        "surface-tint": "#3a5f94",
+                        "on-tertiary-fixed": "#301400",
+                        "inverse-surface": "#303221",
+                        "on-background": "#1b1d0e",
+                        "tertiary": "#341600",
+                        "secondary-fixed": "#ffdcc3",
+                        "background": "#EAE5D7",
+                        "surface-container-highest": "#e4e4cc",
+                        "primary": "#003366",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2f1500",
+                        "tertiary-fixed": "#ffdcc5",
+                        "surface-dim": "#dbdcc3",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d1",
+                        "on-primary-fixed": "#001b3c",
+                        "inverse-primary": "#a7c8ff",
+                        "on-primary-container": "#799dd6",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "secondary-container": "#fd8b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .event-card-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#EAE5D7] shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center">
+<svg class="mr-4" fill="none" height="40" viewbox="0 0 100 100" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 90C30 90 40 70 50 50C60 30 70 10 90 10V40C70 40 60 60 50 80C40 100 30 120 10 120V90Z" fill="#003366"></path>
+</svg>
+<a class="text-xl font-bold text-[#003366] uppercase tracking-wider" href="#">Marsden Cove Yacht Club</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#003366]/70 font-semibold hover:text-[#003366] transition-colors" href="#">Home</a>
+<a class="text-[#003366]/70 font-semibold hover:text-[#003366] transition-colors" href="#">About Us</a>
+<a class="text-[#003366] border-b-2 border-[#003366] pb-1 font-bold" href="#">Events</a>
+<a class="text-[#003366]/70 font-semibold hover:text-[#003366] transition-colors" href="#">Venue Hire</a>
+<a class="text-[#003366]/70 font-semibold hover:text-[#003366] transition-colors" href="#">Membership</a>
+</div>
+<button class="bg-secondary-container text-white px-8 py-3 rounded-full font-bold text-sm tracking-wide hover:opacity-90 transition-opacity">
+                JOIN THE CLUB
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Marine Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEhCnuh_v2AgKXY3AcOfl_DUDQLsH_zIAkergCGB7ZXcyXQZDVwRXJV7nIrQjutGmNU4qF-yG55L0lk8xJ9WoEwTc4Fs0QM8-jDpkq56o1cpw1TUbw-pMf9JlVELd8K4dWsBdxzBX_AiECPGHtlNs1K5nZuGKojtqMBcI_RcQeOAe81vD3YRWUpmOx8zIX06dxg5yS7o_jNQqeTcWdLZY4XcA-CggPFJKIm3-teNO-FdNccdf8woEZaISxNqUp9ZUz1X6E9peiLTU"/>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<h1 class="text-white text-6xl md:text-8xl font-black tracking-tight mb-4 uppercase leading-none">WHAT'S ON<br/>AT MARSDEN</h1>
+</div>
+</section>
+<!-- Filter Toggle -->
+<section class="flex justify-center py-12">
+<div class="inline-flex items-center p-1 bg-transparent border-2 border-black/10 rounded-full">
+<button class="px-8 py-2 bg-[#1b1d0e] text-white rounded-full text-xs font-black uppercase tracking-widest">MONTH VIEW</button>
+<button class="px-8 py-2 text-[#1b1d0e]/60 rounded-full text-xs font-black uppercase tracking-widest hover:text-[#1b1d0e]">LIST VIEW</button>
+</div>
+</section>
+<!-- Events Grid -->
+<section class="max-w-screen-xl mx-auto px-8 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Event Card 1 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Pub Quiz" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9sTxp1esmDClO28yzuydT7S9W260hzmmLEO6wXPqU1hSSE91a5jAgMjtwaIqAerA7WM7-PnqRIBFKaNsVX31KA0z7v6Uz2DLwASyjRZ690T5tib_R4DY56_L5i2Jsv3wG7DvylA1CzFOjz9sEKEyhCjw8iML2Ocak2CRvA782BQFzdq0Gr6t3xrd479FXN-wjlz3gDOA3_BuN8EMdL-hd89qZ3Waue4stsLaYfxoBSgJNqt1siAodYcO6q0Q6vUl0o8O1PdJ1VYo"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">JUL</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">14</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2">Pub Quiz Night</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">Join us for a fun evening of trivia and good company. Prizes to be won!</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Winter Rum Race" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEnUcZeBnK8YFH0dlqRvJ4gRR-mjot35ajsgE9rh_80DeipYS7CqVk3l_3tL2GSAotiLWPZkKnVq2yj0WBYTHWZ2_3AnowGCzqhVU77_pDgZDZXGzWCYk8xheRhakwGvpIfZbOY_CMl003p3ssLLc5MxWQ1ZR4xhO81fw0LCTkQhKbbXbAKqalUf-GWFhtKzxZqTIjEtsRWi-DVeukkEMhmCmjT5iIWPCgaK7KTKXoMSVYT_b5b3cLXilxpfjHtcLKAks-ze_S0FA"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">JUL</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">21</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2 leading-tight">Winter Rum Race Series</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">The first race of our popular winter series. Register your crew now.</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Market" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdL_kf_EzjAUvba47dcYr1wEZ_BA44AdMyP-B3ryk-oRTJT0sKr9cYLz-0QT-Me578GoZXjH9q3lWwYvvGYLQBPJ4lcJCEV1YpmdG5N-hmfm0dPANgfyry_fGouL0jZ-iTcbNR7pEzV1kd-1Q51X1E6jm0ry6rhwjpph-cLgUtLBq04F0i-k0kfzVFyE2hhd2F-j1RAuifSFksZzBHxfnUXjAi9nI9k4KaWVy0MMnLZGlMNZyunkTwwtJvtAeLLwS3wsVgN6aaoCg"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">JUL</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">28</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2 leading-tight">Local Craft &amp; Produce Market</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">Support local artisans and growers. Fresh produce, crafts, and food stalls.</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+<!-- Event Card 4 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Youth Sailing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhkhJEmXTTTWGGR_HLz-QmLmaQM77bKaXVAv-Luw-uQ58Vn5B4CubE1krcpOMpcTlpPYW8edARyf_VeFHBTSKDloNLR2kKwvQsMY2zIA0iDevw2s8ltI-wvGQePjOlhzWRurIF7N2t7SGYj-9JZJHhZ3boed8EwIB1_aDHytazsYEgn7IJpzfXZUbT5kpZOYGo1M5V9q2mGo2wYhb3VIg9N-6ZcXMx-GWmm2OI1sZmnfgznNqfkH5Mi7EM1rEKP3LHeXUvA9K7a_4"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">AUG</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">04</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2 leading-tight">Youth Sailing Programme</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">New term begins for our junior sailors. Learn to sail in a safe, fun environment.</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+<!-- Event Card 5 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Dinner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrKVjkvCHHUN-6GvBM8b83SsSFK1cMleb3Evx03OB2vWOHC0ph-wGxLwVH4924x45C-RZ046q1EvF39gzjzU-WAOPMUWRKRB6NXTPcpnquBXCtnki_NuiiP6haJ0QwbKrtWirvB4HuaiFg0961Rk59qmot3KVB0F8wfTDdHM0RtKxrlfEsb6ULgkQcReOZhZmqWcXKEZifpwkzR6w0Y5VaMtlXf1KkZBkfJJneDesZghlXr6WsNl1zXUBoQjICllZ-RMhvst1cSXM"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">AUG</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">10</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2 leading-tight">Club Mid-Winter Dinner</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">Celebrate the season with a delicious catered meal and entertainment.</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+<!-- Event Card 6 -->
+<div class="bg-white rounded-[2rem] overflow-hidden event-card-shadow flex flex-col p-5">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Fishing Briefing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLVBN1vAVQxUwYg8hV6iY9ntu5AJPX7VUwrkRgpQ_1UYBWmrkOWXd37kTTDugTa4iTIyBq6AUigcTzLUJ9ufo_A04qs7Ls_6Otm2mOJMOAgTYd0dgLssObIb-q-nd214szRve7EJSu_TX7foFw8zsCnY5LM_AfBKRQzSgs01C42kAPpIxXePyIX9e3mcX4FnFkckpIORTiJGTL4YzGaQtOAvcntJMcAzIIEal6NAPLqfws445oKVqlvC7F4fcWTK9GZDlyLZrqQzk"/>
+<div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl text-center min-w-[56px] border border-black/5">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-[#1b1d0e]/60">AUG</span>
+<span class="block text-xl font-black text-[#1b1d0e] leading-none">18</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<h3 class="text-2xl font-black text-[#1b1d0e] mb-2 leading-tight">Fishing Competition Briefing</h3>
+<p class="text-[#1b1d0e]/70 text-sm leading-relaxed mb-8">Get all the details for the upcoming club fishing competition.</p>
+<button class="mt-auto self-start border border-black/10 rounded-lg px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-[#1b1d0e] hover:bg-black/5 transition-colors">READ MORE</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section (Updated to match footer style from image) -->
+<section class="bg-[#003366] text-white py-20 px-8">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex items-center gap-6">
+<svg fill="none" height="60" viewbox="0 0 100 100" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 90C30 90 40 70 50 50C60 30 70 10 90 10V40C70 40 60 60 50 80C40 100 30 120 10 120V90Z" fill="white"></path>
+</svg>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9]">FISHY STORIES.<br/>GOOD TIMES!</h2>
+</div>
+<div class="text-right">
+<p class="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">© 2023, all rights reserved</p>
+<p class="text-white/60 text-xs font-bold uppercase tracking-widest">Site by Online Designs</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Navigation -->
+<footer class="bg-surface py-10 px-8 border-t border-black/5">
+<div class="max-w-screen-xl mx-auto flex flex-wrap justify-center items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-[#1b1d0e]">
+<a class="hover:opacity-60 transition-opacity" href="#">Contact</a>
+<a class="hover:opacity-60 transition-opacity" href="#">Safety</a>
+<a class="hover:opacity-60 transition-opacity" href="#">Club Rules</a>
+<a class="hover:opacity-60 transition-opacity" href="#">Our Committee</a>
+<div class="ml-4 w-8 h-8 bg-[#1b1d0e] rounded-full flex items-center justify-center text-white">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.551-.14-2.852-.14C11.935 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path></svg>
+</div>
+</div>
+</footer>
+</body></html>
