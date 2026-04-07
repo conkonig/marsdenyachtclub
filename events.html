@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Events | Marsden Cove Yacht Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="events-page page-shell text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <nav class="w-full max-w-screen-2xl mx-auto px-4 md:px-8 pt-5">
+        <div class="site-header rounded-[1.75rem] shadow-[0_24px_60px_-24px_rgba(16,40,92,0.35)] px-5 md:px-7 py-4">
+          <div class="flex items-center justify-between gap-6">
+            <a class="site-logo flex items-center gap-3 text-[#132c63]" href="./index.html">
+              <span class="material-symbols-outlined text-4xl">sailing</span>
+              <span class="leading-none">
+                <span class="block text-lg md:text-xl font-black uppercase tracking-tight font-headline">Marsden Yacht</span>
+                <span class="block text-[0.65rem] md:text-xs font-black uppercase tracking-[0.22em]">And Boat Club</span>
+              </span>
+            </a>
+            <ul class="hidden md:flex gap-8 items-center">
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html">Home</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html#about">About Us</a></li>
+              <li><a class="site-nav-link text-[#001e40] font-headline font-bold tracking-tight" data-active="true" href="./events.html">Events</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./venue.html">Venue Hire</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./index.html#membership">Membership</a></li>
+            </ul>
+            <button aria-expanded="false" aria-label="Toggle navigation" class="md:hidden inline-flex items-center gap-2 border border-[#132c63] rounded-2xl px-4 py-2.5 text-[#132c63] font-headline font-bold tracking-wide" data-menu-toggle type="button">
+              <span>MENU</span>
+              <span class="material-symbols-outlined text-xl">menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="site-menu-panel hidden md:hidden mt-4 rounded-2xl bg-white shadow-lg border border-black/5" data-mobile-menu data-open="false">
+          <div class="flex flex-col p-4 text-base font-headline font-bold">
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html">Home</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#about">About Us</a>
+            <a class="px-4 py-3 rounded-xl bg-surface-container-low text-primary" href="./events.html">Events</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./venue.html">Venue Hire</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#membership">Membership</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-30 md:pt-32">
+      <section class="relative max-w-[1500px] mx-auto px-4 md:px-8">
+        <div class="events-hero overflow-hidden rounded-[2.5rem] min-h-[460px] md:min-h-[620px] relative">
+          <div class="absolute inset-0">
+            <img alt="Water texture hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEhCnuh_v2AgKXY3AcOfl_DUDQLsH_zIAkergCGB7ZXcyXQZDVwRXJV7nIrQjutGmNU4qF-yG55L0lk8xJ9WoEwTc4Fs0QM8-jDpkq56o1cpw1TUbw-pMf9JlVELd8K4dWsBdxzBX_AiECPGHtlNs1K5nZuGKojtqMBcI_RcQeOAe81vD3YRWUpmOx8zIX06dxg5yS7o_jNQqeTcWdLZY4XcA-CggPFJKIm3-teNO-FdNccdf8woEZaISxNqUp9ZUz1X6E9peiLTU" />
+            <div class="absolute inset-0 bg-[#0f5470]/55"></div>
+          </div>
+          <div class="relative z-10 flex flex-col items-start justify-end min-h-[460px] md:min-h-[620px] px-8 md:px-16 pb-16 md:pb-20">
+            <span class="material-symbols-outlined text-white text-6xl md:text-7xl mb-8">sailing</span>
+            <h1 class="text-white font-headline font-black uppercase leading-[0.9] tracking-[-0.06em] text-5xl md:text-8xl max-w-4xl">
+              What's On<br />
+              At Marsden
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1280px] mx-auto px-4 md:px-8 pt-10 md:pt-14 pb-10">
+        <div class="flex justify-center">
+          <div class="events-toggle inline-flex items-center rounded-full border border-[#1b1d0e]/55 p-1 bg-white/70 backdrop-blur-sm">
+            <button class="events-toggle-active px-6 py-2 rounded-full font-headline font-extrabold text-sm uppercase tracking-tight" type="button">Month View</button>
+            <button class="px-6 py-2 rounded-full font-headline font-extrabold text-sm uppercase tracking-tight text-[#1b1d0e]" type="button">List View</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1280px] mx-auto px-4 md:px-8 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Pub Quiz Night" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9sTxp1esmDClO28yzuydT7S9W260hzmmLEO6wXPqU1hSSE91a5jAgMjtwaIqAerA7WM7-PnqRIBFKaNsVX31KA0z7v6Uz2DLwASyjRZ690T5tib_R4DY56_L5i2Jsv3wG7DvylA1CzFOjz9sEKEyhCjw8iML2Ocak2CRvA782BQFzdq0Gr6t3xrd479FXN-wjlz3gDOA3_BuN8EMdL-hd89qZ3Waue4stsLaYfxoBSgJNqt1siAodYcO6q0Q6vUl0o8O1PdJ1VYo" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Jul</span>
+                <span class="block text-3xl font-black mt-1">14</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Pub Quiz Night</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">Join us for a fun evening of trivia and good company. Prizes to be won!</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Winter Rum Race Series" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEnUcZeBnK8YFH0dlqRvJ4gRR-mjot35ajsgE9rh_80DeipYS7CqVk3l_3tL2GSAotiLWPZkKnVq2yj0WBYTHWZ2_3AnowGCzqhVU77_pDgZDZXGzWCYk8xheRhakwGvpIfZbOY_CMl003p3ssLLc5MxWQ1ZR4xhO81fw0LCTkQhKbbXbAKqalUf-GWFhtKzxZqTIjEtsRWi-DVeukkEMhmCmjT5iIWPCgaK7KTKXoMSVYT_b5b3cLXilxpfjHtcLKAks-ze_S0FA" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Jul</span>
+                <span class="block text-3xl font-black mt-1">21</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Winter Rum Race Series</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">The first race of our popular winter series. Register your crew now.</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Local Craft and Produce Market" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdL_kf_EzjAUvba47dcYr1wEZ_BA44AdMyP-B3ryk-oRTJT0sKr9cYLz-0QT-Me578GoZXjH9q3lWwYvvGYLQBPJ4lcJCEV1YpmdG5N-hmfm0dPANgfyry_fGouL0jZ-iTcbNR7pEzV1kd-1Q51X1E6jm0ry6rhwjpph-cLgUtLBq04F0i-k0kfzVFyE2hhd2F-j1RAuifSFksZzBHxfnUXjAi9nI9k4KaWVy0MMnLZGlMNZyunkTwwtJvtAeLLwS3wsVgN6aaoCg" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Jul</span>
+                <span class="block text-3xl font-black mt-1">28</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Local Craft &amp; Produce Market</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">Support local artisans and growers. Fresh produce, crafts, and food stalls.</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Youth Sailing Programme" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhkhJEmXTTTWGGR_HLz-QmLmaQM77bKaXVAv-Luw-uQ58Vn5B4CubE1krcpOMpcTlpPYW8edARyf_VeFHBTSKDloNLR2kKwvQsMY2zIA0iDevw2s8ltI-wvGQePjOlhzWRurIF7N2t7SGYj-9JZJHhZ3boed8EwIB1_aDHytazsYEgn7IJpzfXZUbT5kpZOYGo1M5V9q2mGo2wYhb3VIg9N-6ZcXMx-GWmm2OI1sZmnfgznNqfkH5Mi7EM1rEKP3LHeXUvA9K7a_4" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Aug</span>
+                <span class="block text-3xl font-black mt-1">04</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Youth Sailing Programme</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">New term begins for our junior sailors. Learn to sail in a safe, fun environment.</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Club Mid-Winter Dinner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrKVjkvCHHUN-6GvBM8b83SsSFK1cMleb3Evx03OB2vWOHC0ph-wGxLwVH4924x45C-RZ046q1EvF39gzjzU-WAOPMUWRKRB6NXTPcpnquBXCtnki_NuiiP6haJ0QwbKrtWirvB4HuaiFg0961Rk59qmot3KVB0F8wfTDdHM0RtKxrlfEsb6ULgkQcReOZhZmqWcXKEZifpwkzR6w0Y5VaMtlXf1KkZBkfJJneDesZghlXr6WsNl1zXUBoQjICllZ-RMhvst1cSXM" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Aug</span>
+                <span class="block text-3xl font-black mt-1">10</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Club Mid-Winter Dinner</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">Celebrate the season with a delicious catered meal and entertainment.</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="events-card rounded-[1.75rem] p-4 md:p-5">
+            <div class="relative rounded-[1.35rem] overflow-hidden h-56 md:h-60">
+              <img alt="Fishing Competition Briefing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLVBN1vAVQxUwYg8hV6iY9ntu5AJPX7VUwrkRgpQ_1UYBWmrkOWXd37kTTDugTa4iTIyBq6AUigcTzLUJ9ufo_A04qs7Ls_6Otm2mOJMOAgTYd0dgLssObIb-q-nd214szRve7EJSu_TX7foFw8zsCnY5LM_AfBKRQzSgs01C42kAPpIxXePyIX9e3mcX4FnFkckpIORTiJGTL4YzGaQtOAvcntJMcAzIIEal6NAPLqfws445oKVqlvC7F4fcWTK9GZDlyLZrqQzk" />
+              <div class="events-date-badge absolute top-4 left-4 bg-white text-[#1b1d0e] rounded-2xl px-3 py-2 text-center leading-none shadow-lg">
+                <span class="block text-xs font-black uppercase">Aug</span>
+                <span class="block text-3xl font-black mt-1">18</span>
+              </div>
+            </div>
+            <div class="pt-5 px-1">
+              <h2 class="text-[#1b1d0e] font-headline font-black text-2xl md:text-[2rem] leading-none">Fishing Competition Briefing</h2>
+              <p class="mt-4 text-on-surface/85 leading-relaxed">Get all the details for the upcoming club fishing competition.</p>
+              <a class="events-card-button inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-2xl font-headline font-extrabold uppercase tracking-tight" href="./events.html">
+                Read More
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="events-footer text-white">
+      <div class="max-w-[1500px] mx-auto pt-8">
+        <div class="events-footer-banner rounded-t-[2.5rem] px-8 md:px-14 py-14 md:py-16">
+          <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
+            <div class="flex items-center gap-5">
+              <span class="material-symbols-outlined text-6xl md:text-7xl">sailing</span>
+              <div class="font-headline font-black uppercase tracking-[-0.05em] leading-[0.9] text-4xl md:text-6xl">
+                <div>Anchors Down,</div>
+                <div>Spirits Up!</div>
+              </div>
+            </div>
+            <div class="text-white/80 text-sm md:text-base text-left md:text-right">
+              <div>© 2026, all rights reserved</div>
+              <div><a class="hover:text-white transition-colors" href="https://connorstansfield.com/" rel="noopener noreferrer" target="_blank">Site by Connor Stansfield</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[1280px] mx-auto px-8 md:px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6 text-[#1b1d0e]">
+          <div class="flex flex-wrap items-center justify-center gap-6 text-base">
+            <a class="hover:text-[#132c63]" href="./index.html#about">Contact</a>
+            <a class="hover:text-[#132c63]" href="#">Safety</a>
+            <a class="hover:text-[#132c63]" href="#">Club Rules</a>
+            <a class="hover:text-[#132c63]" href="#">Our Committee</a>
+          </div>
+          <a class="events-social inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#132c63] text-white hover:bg-[#10285c]" href="#">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

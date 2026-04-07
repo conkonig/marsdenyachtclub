@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marsden Cove Yacht Club | Anchored in Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="home-page page-shell text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <nav class="w-full max-w-screen-2xl mx-auto px-4 md:px-8 pt-5">
+        <div class="site-header rounded-[1.75rem] shadow-[0_24px_60px_-24px_rgba(16,40,92,0.35)] px-5 md:px-7 py-4">
+          <div class="flex items-center justify-between gap-6">
+            <a class="site-logo flex items-center gap-3 text-[#132c63]" href="./index.html">
+              <span class="material-symbols-outlined text-4xl">sailing</span>
+              <span class="leading-none">
+                <span class="block text-lg md:text-xl font-black uppercase tracking-tight font-headline">Marsden Yacht</span>
+                <span class="block text-[0.65rem] md:text-xs font-black uppercase tracking-[0.22em]">And Boat Club</span>
+              </span>
+            </a>
+            <ul class="hidden md:flex gap-8 items-center">
+              <li><a class="site-nav-link text-[#001e40] font-headline font-bold tracking-tight" data-active="true" href="./index.html">Home</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#about">About Us</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./events.html">Events</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="./venue.html">Venue Hire</a></li>
+              <li><a class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300" href="#membership">Membership</a></li>
+            </ul>
+            <button aria-expanded="false" aria-label="Toggle navigation" class="md:hidden inline-flex items-center gap-2 border border-[#132c63] rounded-2xl px-4 py-2.5 text-[#132c63] font-headline font-bold tracking-wide" data-menu-toggle type="button">
+              <span>MENU</span>
+              <span class="material-symbols-outlined text-xl">menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="site-menu-panel hidden md:hidden mt-4 rounded-2xl bg-white shadow-lg border border-black/5" data-mobile-menu data-open="false">
+          <div class="flex flex-col p-4 text-base font-headline font-bold">
+            <a class="px-4 py-3 rounded-xl bg-surface-container-low text-primary" href="./index.html">Home</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="#about">About Us</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./events.html">Events</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./venue.html">Venue Hire</a>
+            <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="#membership">Membership</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-30 md:pt-32">
+      <section class="home-hero-shell relative max-w-[1500px] mx-auto px-4 md:px-8">
+        <div class="relative overflow-hidden rounded-[2.5rem] min-h-[540px] md:min-h-[700px]">
+          <div class="absolute inset-0 z-0">
+            <img
+              alt="Yachts in Marsden Cove"
+              class="w-full h-full object-cover"
+              src="https://conologue.com/wp-content/uploads/2026/04/yachtclub.webp"
+            />
+          </div>
+          <div class="relative z-10 px-6 md:px-12 pt-24 md:pt-28 pb-32 md:pb-48">
+            <div class="max-w-5xl mx-auto flex justify-center">
+              <span class="inline-flex px-4 py-1.5 rounded-full bg-white/60 text-[#132c63] border border-white/70 backdrop-blur-sm text-xs font-black tracking-[0.28em] uppercase font-headline">
+                Est. 2005 • Northland, NZ
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="relative z-20 max-w-6xl mx-auto -mt-20 md:-mt-28 px-2 md:px-8">
+          <div class="home-welcome-card rounded-[2.5rem] px-8 md:px-16 py-10 md:py-14 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-headline font-black leading-[0.95] tracking-[-0.05em] uppercase">
+              Welcome To<br />
+              Marsden Yacht And Boat Club
+            </h1>
+            <p class="max-w-2xl mx-auto mt-5 text-base md:text-xl text-white/85 leading-relaxed">
+              Join our community of passionate sailors and boating enthusiasts at the heart of Marsden Cove.
+            </p>
+            <div class="mt-8 flex justify-center">
+              <a class="inline-flex items-center gap-2 bg-white text-[#10285c] px-7 py-3 rounded-2xl font-headline font-extrabold tracking-wide border border-white hover:bg-[#10285c] hover:text-white transition-colors" href="#membership">
+                JOIN THE CLUB
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-16 md:pt-20 pb-10 px-4 md:px-8 max-w-[1280px] mx-auto">
+        <div class="flex justify-between items-end mb-10 md:mb-12 gap-6">
+          <h2 class="home-section-title font-headline font-black text-4xl md:text-6xl uppercase">Upcoming Events</h2>
+          <a class="hidden md:flex items-center gap-2 text-[#132c63] font-headline font-bold text-lg group" href="./events.html">
+            View All
+            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <article class="home-card rounded-[1.75rem] p-4 md:p-5 transition-transform duration-300">
+            <div class="rounded-[1.35rem] overflow-hidden h-52 md:h-56">
+              <img alt="Pub Quiz Night" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVoVvt0HAr4upX-SRhDwY9As0i0mnlS-9_1UFYJCF1BWv_E7V9DebC4kIAjU7hPzYofCZjzMk3-ehQkBiKI0e73sdFTMK-S79NJkYnhDz_Nbk2spdw5bZ6A8nl3IEUKAkHj-5kDvLm_qSlpjln3uh6MsGYovGi1TIHxhYeMl209LPCFYg55Y3FKUXO0qQlZtrbXDHJYPrSSIWBBvq8FD4719_diy60hC_UafvpF7vxm_uNLqTOEqDZ5Yk63_ydGKM308Lmt3jego" />
+            </div>
+            <div class="pt-5 px-1">
+              <h3 class="text-[#132c63] font-headline font-black text-2xl md:text-[2rem] uppercase leading-none">Pub Quiz Night</h3>
+              <p class="mt-2 text-[#1b1d0e] font-black uppercase tracking-tight">Every Wednesday, 7PM</p>
+              <a class="home-card-button inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-2xl font-headline font-extrabold transition-colors" href="./events.html">
+                More Info
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="home-card rounded-[1.75rem] p-4 md:p-5 transition-transform duration-300">
+            <div class="rounded-[1.35rem] overflow-hidden h-52 md:h-56">
+              <img alt="Rum Races" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCky5JSJUyhvk1sP6oOJ4uC6JoeFnSKNk2L8ngnBRIFYtKu6Und_CGt-74_e68KulMUznS9KzoF90sP5T3q7WPlhaiAHhRsGAdnJ9lgR2x6NRtjsNi_7pYv-SPb3CuEnEDm8NYX439gx5M4O8iM95B6Zi6eMqsCK4Ytw6qizSSGCbKEnZ2Vv8rQ5q-dXR1VOI88eSADNIYZKx8mWkituOTq5V3raAvHKMgMVNPl1ZNYRGmuX50F_rgc_73Yh9mxcrQAvpY8mh7XoAc" />
+            </div>
+            <div class="pt-5 px-1">
+              <h3 class="text-[#132c63] font-headline font-black text-2xl md:text-[2rem] uppercase leading-none">Rum Races</h3>
+              <p class="mt-2 text-[#1b1d0e] font-black uppercase tracking-tight">Friday, 6PM</p>
+              <a class="home-card-button inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-2xl font-headline font-extrabold transition-colors" href="./events.html">
+                More Info
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="home-card rounded-[1.75rem] p-4 md:p-5 transition-transform duration-300">
+            <div class="rounded-[1.35rem] overflow-hidden h-52 md:h-56">
+              <img alt="Yacht Racing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXK2cn_keFZrAT9oUPe5ERnCSTmsHzwcCIh9k0UWED8pC01aHI3jEAaEAhVNrJnQjCi4sd1Fa0Lk0Ci60IBk7HIEh_UFxwKGlWJfpVIDkDWqBxNnRHGF36mfRVHNdWPqIlL6bnxWOIvNPlbOdDHncu3E2K9paULtFcMGxSe0Wsd2e5sNiGjNrDan5HFMXgs-5Mvn_OP_jVBuwZltC63AzYTVsbv4aIAvFKeVWXGhsIzpRLUVWTaam0M_nIoLfEi3FgO3-bDqWGDqQ" />
+            </div>
+            <div class="pt-5 px-1">
+              <h3 class="text-[#132c63] font-headline font-black text-2xl md:text-[2rem] uppercase leading-none">Yacht Racing</h3>
+              <p class="mt-2 text-[#1b1d0e] font-black uppercase tracking-tight">Saturday, 10AM</p>
+              <a class="home-card-button inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-2xl font-headline font-extrabold transition-colors" href="./events.html">
+                More Info
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pt-10 pb-20 px-4 md:px-8 max-w-[1280px] mx-auto">
+        <div class="mb-10 md:mb-12">
+          <h2 class="home-section-title font-headline font-black text-4xl md:text-6xl uppercase">Venue Hire</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <article class="home-card rounded-[1.75rem] p-4 md:p-5 transition-transform duration-300">
+            <div class="rounded-[1.35rem] overflow-hidden h-64 md:h-72">
+              <img alt="Host Your Event" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ_zbTvOP9UtH9cZHE20GIIU8BmM0kcooPnC_N6NNgPLkBB8jCOWyKcXV4jr8BPWloBxZAAZh95pXko4AY8S6_L_8RVaMV47vFHUBJ28SISSCe_BxZbZMLgPlv6e8wwsuQXla_5uqfThEi7dDv99LwZWK2pXp751Yvs9SaOSC671GFgXBrqqMn2yWR7QoJfBozmt1KCkjzg5F09z12wgliEN08jJgJ76QXhvBwAtpy14_OfNkFGVW8Rf_dGfxRYXCNjMG63-ueFZU" />
+            </div>
+            <div class="pt-5 px-1">
+              <h3 class="text-[#132c63] font-headline font-black text-2xl md:text-[2rem] uppercase leading-none">Host Your Event</h3>
+              <p class="mt-3 text-on-surface/80 text-lg leading-relaxed">Book our clubhouse for weddings, parties, and corporate events.</p>
+              <a class="home-card-button inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-2xl font-headline font-extrabold transition-colors" href="./venue.html">
+                View Venues
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+          <article class="home-card rounded-[1.75rem] p-4 md:p-5 transition-transform duration-300">
+            <div class="rounded-[1.35rem] overflow-hidden h-64 md:h-72">
+              <img alt="Waterfront Deck" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr4IDF6MGoY55R6sNxt-EWwdrCVBSE9duEOz0zsQ_FKjKlr0hmRt2MgnL-R1OxZI5BKKK3rhp4tLGd1yx0N0eC7gHOUwZ7YjCc-Bz2AzUtZnSd8tL5hnO-1Y11-edyylWEjjNU2p60Z_dONE0Cg7g5lLZM26SWWhpUPC58Ul3bKxJBvmU-xTSOuSAV0Qk4H6e7mstuXd8CviHVuFKSqXzxUu1SDEzJlKZQyfgCBRTfoi9krs3PtpWc8uzG0BKSUnICEsiyyLRhu7U" />
+            </div>
+            <div class="pt-5 px-1">
+              <h3 class="text-[#132c63] font-headline font-black text-2xl md:text-[2rem] uppercase leading-none">Waterfront Deck</h3>
+              <p class="mt-3 text-on-surface/80 text-lg leading-relaxed">Enjoy stunning views of the cove for your next gathering.</p>
+              <a class="home-card-button inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-2xl font-headline font-extrabold transition-colors" href="./venue.html">
+                Enquire Now
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-20 px-4 md:px-8" id="membership">
+        <div class="max-w-5xl mx-auto nautical-gradient rounded-[2rem] p-10 md:p-16 text-center relative overflow-hidden">
+          <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+          <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+          <h2 class="text-on-primary font-headline font-extrabold text-4xl md:text-5xl mb-6 relative z-10">Stay In The Loop</h2>
+          <p class="text-on-primary/90 font-body text-lg md:text-xl mb-10 max-w-2xl mx-auto relative z-10">Get the latest racing results, upcoming social event news, and marina updates delivered directly to your inbox.</p>
+          <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto relative z-10">
+            <input class="flex-1 px-7 py-4 rounded-full bg-surface-container-lowest border-none text-primary focus:ring-2 focus:ring-primary font-medium" placeholder="Your email address" type="email" />
+            <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-extrabold tracking-wide hover:bg-primary-container transition-all" type="submit">
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer mt-8 text-white" id="about">
+      <div class="max-w-[1280px] mx-auto px-6 md:px-10 py-14 md:py-16">
+        <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
+          <div class="flex items-center gap-5">
+            <span class="material-symbols-outlined text-6xl md:text-7xl">sailing</span>
+            <div class="font-headline font-black uppercase tracking-[-0.05em] leading-[0.9] text-4xl md:text-6xl">
+              <div>Sail Fast.</div>
+              <div>Live Slow.</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-5">
+            <a class="text-white/90 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-4xl">public</span></a>
+            <a class="text-white/90 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-4xl">photo_camera</span></a>
+            <a class="text-white/90 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-4xl">smart_display</span></a>
+          </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-white/15 flex flex-col md:flex-row items-center justify-between gap-5 text-white/70 text-sm">
+          <span>© 2026 Marsden Yacht and Boat Club. All rights reserved.</span>
+          <div class="flex flex-wrap items-center justify-center gap-6">
+            <a class="hover:text-white" href="./events.html">Events</a>
+            <a class="hover:text-white" href="./venue.html">Venue Hire</a>
+            <a class="hover:text-white" href="#membership">Membership</a>
+            <a class="hover:text-white" href="./index.html">Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

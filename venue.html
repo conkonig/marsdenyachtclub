@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Venue Hire | Marsden Cove Yacht Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link href="./styles.css" rel="stylesheet" />
+  <script src="./scripts.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body class="venue-page page-shell text-on-surface font-body">
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="w-full max-w-screen-2xl mx-auto px-4 md:px-8 pt-5">
+      <div class="site-header rounded-[1.75rem] shadow-[0_24px_60px_-24px_rgba(16,40,92,0.35)] px-5 md:px-7 py-4">
+        <div class="flex items-center justify-between gap-6">
+          <a class="site-logo flex items-center gap-3 text-[#132c63]" href="./index.html">
+            <span class="material-symbols-outlined text-4xl">sailing</span>
+            <span class="leading-none">
+              <span class="block text-lg md:text-xl font-black uppercase tracking-tight font-headline">Marsden
+                Cove</span>
+              <span class="block text-[0.65rem] md:text-xs font-black uppercase tracking-[0.22em]">Fish N Club</span>
+            </span>
+          </a>
+          <ul class="hidden md:flex gap-8 items-center">
+            <li><a
+                class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300"
+                href="./index.html">Home</a></li>
+            <li><a
+                class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300"
+                href="./index.html#about">About Us</a></li>
+            <li><a
+                class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300"
+                href="./events.html">Events</a></li>
+            <li><a class="site-nav-link text-[#001e40] font-headline font-bold tracking-tight" data-active="true"
+                href="./venue.html">Venue Hire</a></li>
+            <li><a
+                class="site-nav-link text-[#001e40]/70 font-headline font-bold tracking-tight hover:text-[#fd8b00] transition-colors duration-300"
+                href="./index.html#membership">Membership</a></li>
+          </ul>
+          <button aria-expanded="false" aria-label="Toggle navigation"
+            class="md:hidden inline-flex items-center gap-2 border border-[#132c63] rounded-2xl px-4 py-2.5 text-[#132c63] font-headline font-bold tracking-wide"
+            data-menu-toggle type="button">
+            <span>MENU</span>
+            <span class="material-symbols-outlined text-xl">menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-menu-panel hidden md:hidden mt-4 rounded-2xl bg-white shadow-lg border border-black/5"
+        data-mobile-menu data-open="false">
+        <div class="flex flex-col p-4 text-base font-headline font-bold">
+          <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html">Home</a>
+          <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#about">About Us</a>
+          <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./events.html">Events</a>
+          <a class="px-4 py-3 rounded-xl bg-surface-container-low text-primary" href="./venue.html">Venue Hire</a>
+          <a class="px-4 py-3 rounded-xl hover:bg-surface-container-low" href="./index.html#membership">Membership</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-30 md:pt-32">
+    <section class="max-w-[1500px] mx-auto px-4 md:px-8">
+      <div class="text-center max-w-5xl mx-auto mb-8 md:mb-10">
+        <h1
+          class="venue-title font-headline font-black uppercase leading-[0.9] tracking-[-0.06em] text-5xl md:text-8xl">
+          Marsden Venue<br />
+          Hire &amp; Facilities
+        </h1>
+      </div>
+      <div class="relative">
+        <div class="venue-hero rounded-[2.5rem] overflow-hidden h-[420px] md:h-[560px]">
+          <img alt="Marsden Cove Yacht Club Interior" class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRD3X7M2qq3_MdzDJdznnmNp48IFG86sAqE-Np665AAF7NtDEQwK8-WzPsClP8E1bTiuMxu2FJ0OAj-o0Zo7Ex5GqMrRlQdF7bjC9iV1QRQwQyZertYlxi6kLdOM222zijNO50GQIUJqowg6X12VtG07f3-lQqQ6qAd-ru3bijMOBfFFI8DFSYfP29oInLlRGKaqwTE_lsqLLDiQzHhoqReQ-F99Oh1aCCgFBD35BoEGzSuhhKfjb3m2sGANezPwLAR1K0cmTo6A" />
+        </div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
+          <div class="hero-gradient-btn p-[2px] rounded-[1.35rem] shadow-xl">
+            <a class="block bg-white text-on-surface px-8 md:px-10 py-3 md:py-4 rounded-[1.2rem] font-headline font-extrabold text-sm md:text-base uppercase tracking-wide"
+              href="#enquiry">
+              Book Your Event
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1280px] mx-auto px-4 md:px-8 pt-24 pb-16">
+      <div class="text-center mb-12">
+        <h2 class="venue-section-title font-headline font-black text-4xl md:text-6xl uppercase">Our Spaces</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="venue-space-card">
+          <h3 class="font-headline font-black text-2xl uppercase mb-4">The Main Hall</h3>
+          <div class="rounded-[1.35rem] overflow-hidden aspect-[4/3] shadow-md">
+            <img alt="The Main Hall" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdouNRKYWIlJSC747601ZYxSUzFiIZ6CXohGM1ypxOfTicLV-KESzNwjlr7IWA1V34Y5PaV0dnX7l9yjtY_O4itsTX4HlGNpkt-7GYcLMjRgy2ZEG3PqbywgoFUBhgxjahOa39lfgCGjDAvfy51tLeNAW2Q4qL_J60cG6QTXJ9Nh1II-KDRrFGXT-Q78BRsag5opmL-G8qJcDYXU-KK1b1744yiXi4YRIjrWEgE4Bwae_SG1xAx9BwmRKtez7aNVOF35AkeBeFsTY" />
+          </div>
+          <p class="mt-4 text-on-surface/80 leading-relaxed text-lg">
+            Spacious hall for large gatherings, weddings, and conferences. Accommodates up to 200 guests. Stage area and
+            dance floor available.
+          </p>
+        </article>
+        <article class="venue-space-card">
+          <h3 class="font-headline font-black text-2xl uppercase mb-4">The Bar &amp; Lounge</h3>
+          <div class="rounded-[1.35rem] overflow-hidden aspect-[4/3] shadow-md">
+            <img alt="The Bar and Lounge" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd9Oqdt_Wex64ipVHpCBQwmICBbUtmXz1TTaUljK5AjBKZQ40ySW6T-tcQZoqVAdntrH-Zp06js6KxicnEPYfbKuvC7qtIb4mWhYXTtgv3sE1N5p_P4uKwkkUhibv2ZP2wjWYJ4KgM5EbfPAhCm3Eq9uRrIHpnOnCNx6evJTnRnNJSt7uzi275xsV0msjDkW0hjGPrzdalK0haofTx5Pg_ZKLa_wyx4WVYfH3k4nypGF5LnoHDsHXfhTTstdiCCwPN7rBZUyQWpA" />
+          </div>
+          <p class="mt-4 text-on-surface/80 leading-relaxed text-lg">
+            Cozy area with a fully licensed bar, comfortable seating, and direct access to the deck. Perfect for
+            cocktails and smaller parties.
+          </p>
+        </article>
+        <article class="venue-space-card">
+          <h3 class="font-headline font-black text-2xl uppercase mb-4">The Ocean Deck</h3>
+          <div class="rounded-[1.35rem] overflow-hidden aspect-[4/3] shadow-md">
+            <img alt="The Ocean Deck" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9UqQ6DA281Hloig60cd2xJI4lwt524ynbgpkTSvIu-pZHjs0Am4_Lmrfu6iuT8ebywpvm4RLsB_B3KP3O1ngcx-Dbjbr_jJbOApMxw6PUQ6WpIT6do9vIO3YqfZ7Oz_wUmb9GZcYzzHz1hIVffqmoXJaaQCUoSvbXqzZ5j_t75rTs-cGdWupnn5-sUHDc1huL9hKwrYU8y5l0zWlkOdNvt3nh0sz976Qz9N0sn_vkytnYLvuI5Znn84synPmp5Y6m8RO_-Ob3cQ" />
+          </div>
+          <p class="mt-4 text-on-surface/80 leading-relaxed text-lg">
+            Expansive outdoor deck with panoramic ocean and marina views. Ideal for ceremonies and sunset receptions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="max-w-[1280px] mx-auto px-4 md:px-8 py-10">
+      <div class="text-center mb-12">
+        <h2 class="venue-section-title font-headline font-black text-4xl md:text-6xl uppercase">Key Features</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-10">
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">restaurant</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">Commercial Kitchen</span>
+        </div>
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">wine_bar</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">Licensed Bar</span>
+        </div>
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">volume_up</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">AV &amp; Sound System</span>
+        </div>
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">waves</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">Stunning Ocean Views</span>
+        </div>
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">directions_car</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">Ample Parking</span>
+        </div>
+        <div class="venue-feature flex flex-col items-center text-center gap-4">
+          <span class="material-symbols-outlined text-5xl">accessible</span>
+          <span class="font-headline font-extrabold text-lg leading-tight">Accessible Facilities</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative pt-16 pb-0" id="enquiry">
+      <div class="absolute inset-x-0 bottom-0 h-[260px] bg-[#0f5d85] z-0"></div>
+      <div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8">
+        <div
+          class="venue-enquiry-card rounded-[2rem] p-8 md:p-12 border-[3px] border-[#0f5d85] bg-[rgba(255,255,255,0.96)] shadow-[0_28px_60px_rgba(16,40,92,0.12)]">
+          <h2 class="venue-section-title font-headline font-black text-4xl md:text-6xl uppercase text-center mb-10">
+            Enquire Now</h2>
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none" placeholder="Name"
+                type="text" />
+              <input class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none" placeholder="Email Address"
+                type="email" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+              <input class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none" placeholder="Phone Number"
+                type="tel" />
+              <select class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none text-on-surface/70">
+                <option>Event Type</option>
+                <option>Wedding</option>
+                <option>Corporate</option>
+                <option>Private Party</option>
+              </select>
+              <input class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none"
+                placeholder="Estimated Guests" type="number" />
+              <input class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none" onfocus="this.type='date'"
+                placeholder="Date" type="text" />
+            </div>
+            <textarea class="venue-input w-full rounded-2xl px-5 py-4 text-base outline-none h-36"
+              placeholder="Message"></textarea>
+            <button
+              class="venue-submit w-full py-4 rounded-2xl font-headline font-extrabold uppercase tracking-wide text-white"
+              type="submit">
+              Submit Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="events-footer text-white">
+    <div class="max-w-[1500px] mx-auto pt-0">
+      <div class="events-footer-banner rounded-b-[2.5rem] px-8 md:px-14 py-14 md:py-16">
+        <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
+          <div class="flex items-center gap-5">
+            <span class="material-symbols-outlined text-6xl md:text-7xl">sailing</span>
+            <div class="font-headline font-black uppercase tracking-[-0.05em] leading-[0.9] text-4xl md:text-6xl">
+              <div>Anchors Down,</div>
+              <div>Spirits Up!</div>
+            </div>
+          </div>
+          <div class="text-white/80 text-sm md:text-base text-left md:text-right">
+            <div>© 2026, all rights reserved</div>
+            <div><a class="hover:text-white transition-colors" href="https://connorstansfield.com/" rel="noopener noreferrer" target="_blank">Site by Connor Stansfield</a></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1280px] mx-auto px-8 md:px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6 text-[#1b1d0e]">
+        <div class="flex flex-wrap items-center justify-center gap-6 text-base">
+          <a class="hover:text-[#132c63]" href="./index.html#about">Contact</a>
+          <a class="hover:text-[#132c63]" href="#">Safety</a>
+          <a class="hover:text-[#132c63]" href="#">Club Rules</a>
+          <a class="hover:text-[#132c63]" href="#">Our Committee</a>
+        </div>
+        <a class="events-social inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#132c63] text-white hover:bg-[#10285c]"
+          href="#">
+          <span class="material-symbols-outlined">public</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
