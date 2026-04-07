@@ -69,6 +69,157 @@ body {
   font-size: 1.25rem;
 }
 
+.pt-30 {
+  padding-top: 8rem;
+}
+
+.home-page {
+  background:
+    radial-gradient(circle at top, rgba(156, 196, 238, 0.22), transparent 32%),
+    linear-gradient(180deg, #f4f8fc 0%, #fffaf1 42%, #ffffff 100%);
+}
+
+.home-hero-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(238, 246, 255, 0.9) 0%, rgba(255, 255, 255, 0.08) 28%, rgba(255, 255, 255, 0) 54%);
+  pointer-events: none;
+}
+
+.home-welcome-card {
+  background: linear-gradient(120deg, #10285c 0%, #1a2958 56%, #ff963c 100%);
+  box-shadow: 0 28px 60px rgba(16, 40, 92, 0.18);
+}
+
+.home-section-title {
+  color: #132c63;
+  letter-spacing: -0.04em;
+}
+
+.home-card {
+  background: linear-gradient(180deg, rgba(255, 251, 244, 0.98) 0%, rgba(248, 243, 233, 0.95) 100%);
+  box-shadow: 0 22px 44px rgba(16, 40, 92, 0.08);
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-card-button {
+  border: 1.5px solid #10285c;
+  color: #10285c;
+}
+
+.home-card-button:hover {
+  background: #10285c;
+  color: #fff;
+}
+
+.home-footer {
+  background: linear-gradient(135deg, #10285c 0%, #162d63 100%);
+}
+
+.events-page {
+  background:
+    radial-gradient(circle at top, rgba(205, 180, 116, 0.16), transparent 28%),
+    linear-gradient(180deg, #fbf7ee 0%, #fffdf9 100%);
+}
+
+.events-hero {
+  box-shadow: 0 30px 80px rgba(15, 84, 112, 0.18);
+}
+
+.events-toggle {
+  box-shadow: 0 14px 34px rgba(16, 40, 92, 0.08);
+}
+
+.events-toggle-active {
+  background: #1b1d0e;
+  color: #fff;
+}
+
+.events-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(249, 245, 236, 0.95) 100%);
+  box-shadow: 0 20px 45px rgba(16, 40, 92, 0.1);
+}
+
+.events-date-badge {
+  border: 1.5px solid rgba(27, 29, 14, 0.5);
+}
+
+.events-card-button {
+  border: 1.5px solid #1b1d0e;
+  color: #1b1d0e;
+}
+
+.events-card-button:hover {
+  background: #1b1d0e;
+  color: #fff;
+}
+
+.events-footer {
+  background: linear-gradient(180deg, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0.96) 100%);
+}
+
+.events-footer-banner {
+  background: linear-gradient(135deg, #0f5d85 0%, #0a6c99 100%);
+}
+
+.events-social {
+  box-shadow: 0 18px 30px rgba(16, 40, 92, 0.18);
+}
+
+.venue-page {
+  background:
+    radial-gradient(circle at top, rgba(205, 180, 116, 0.14), transparent 30%),
+    linear-gradient(180deg, #fbf7ee 0%, #fffdf8 100%);
+}
+
+.venue-title,
+.venue-section-title {
+  color: #1b1d0e;
+}
+
+.venue-hero {
+  box-shadow: 0 26px 70px rgba(109, 80, 42, 0.14);
+}
+
+.venue-space-card {
+  transition: transform 180ms ease;
+}
+
+.venue-space-card:hover {
+  transform: translateY(-4px);
+}
+
+.venue-feature .material-symbols-outlined {
+  color: #1b1d0e;
+}
+
+.venue-input {
+  border: 1.5px solid rgba(27, 29, 14, 0.42);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.venue-input:focus {
+  border-color: #0f5d85;
+  box-shadow: 0 0 0 3px rgba(15, 93, 133, 0.12);
+}
+
+.venue-submit {
+  background: linear-gradient(90deg, #ff4f86 0%, #e23186 52%, #ff5f5f 100%);
+}
+
+.venue-submit:hover {
+  filter: brightness(1.05);
+}
+
 @media (max-width: 767px) {
   .site-nav-link[data-active="true"]::after {
     display: none;

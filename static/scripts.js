@@ -1,4 +1,5 @@
-tailwind.config = {
+window.tailwind = window.tailwind || {};
+window.tailwind.config = {
   darkMode: "class",
   theme: {
     extend: {
@@ -70,6 +71,7 @@ tailwind.config = {
 document.addEventListener("DOMContentLoaded", () => {
   const menuButtons = document.querySelectorAll("[data-menu-toggle]");
   const mobilePanels = document.querySelectorAll("[data-mobile-menu]");
+  const mobileLinks = document.querySelectorAll("[data-mobile-menu] a");
 
   const setOpen = (open) => {
     mobilePanels.forEach((panel) => {
@@ -91,8 +93,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      setOpen(false);
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideButton = Array.from(menuButtons).some((button) => button.contains(event.target));
+    const clickedInsidePanel = Array.from(mobilePanels).some((panel) => panel.contains(event.target));
+
+    if (!clickedInsideButton && !clickedInsidePanel) {
+      setOpen(false);
+    }
+  });
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
+      setOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
       setOpen(false);
     }
   });
