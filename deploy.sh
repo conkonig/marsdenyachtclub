@@ -125,10 +125,12 @@ publish_pages_branch() {
   log "Publishing static/ to $PAGES_BRANCH"
 
   local tmp_dir
+  local remote_url
   tmp_dir="$(mktemp -d)"
   trap 'rm -rf "$tmp_dir"' EXIT
+  remote_url="$(git -C "$ROOT_DIR" remote get-url origin)"
 
-  git clone --branch "$DEFAULT_BRANCH" --single-branch "$ROOT_DIR" "$tmp_dir/repo" >/dev/null 2>&1
+  git clone --branch "$DEFAULT_BRANCH" --single-branch "$remote_url" "$tmp_dir/repo" >/dev/null 2>&1
 
   (
     cd "$tmp_dir/repo"
@@ -148,25 +150,37 @@ publish_pages_branch() {
 configure_pages() {
   local owner
   local name
+  local create_status
+  local update_status
 
   owner="${REPO_SLUG%%/*}"
   name="${REPO_SLUG##*/}"
 
   log "Configuring GitHub Pages"
-  gh api \
+  if gh api \
     --method POST \
     -H "Accept: application/vnd.github+json" \
     "/repos/$owner/$name/pages" \
     -f source[branch]="$PAGES_BRANCH" \
-    -f source[path]="/" >/dev/null 2>&1 || \
-  gh api \
+    -f source[path]="/" >/dev/null 2>&1; then
+    printf '\nGitHub Pages should publish from branch %s at: https://%s.github.io/%s/\n' "$PAGES_BRANCH" "$owner" "$name"
+    return
+  fi
+
+  create_status=$?
+
+  if gh api \
     --method PUT \
     -H "Accept: application/vnd.github+json" \
     "/repos/$owner/$name/pages" \
     -f source[branch]="$PAGES_BRANCH" \
-    -f source[path]="/" >/dev/null
+    -f source[path]="/" >/dev/null; then
+    printf '\nGitHub Pages should publish from branch %s at: https://%s.github.io/%s/\n' "$PAGES_BRANCH" "$owner" "$name"
+    return
+  fi
 
-  printf '\nGitHub Pages should publish from branch %s at: https://%s.github.io/%s/\n' "$PAGES_BRANCH" "$owner" "$name"
+  update_status=$?
+  fail "Unable to configure GitHub Pages automatically (create exit $create_status, update exit $update_status). Confirm the repo exists on GitHub, that '$PAGES_BRANCH' was pushed to origin, and that your GitHub CLI token has repo admin access."
 }
 
 main() {
