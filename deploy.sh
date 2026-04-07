@@ -127,7 +127,6 @@ publish_pages_branch() {
   local tmp_dir
   local remote_url
   tmp_dir="$(mktemp -d)"
-  trap 'rm -rf "$tmp_dir"' EXIT
   remote_url="$(git -C "$ROOT_DIR" remote get-url origin)"
 
   git clone --branch "$DEFAULT_BRANCH" --single-branch "$remote_url" "$tmp_dir/repo" >/dev/null 2>&1
@@ -145,6 +144,8 @@ publish_pages_branch() {
     git commit -m "Publish GitHub Pages"
     git push -f origin "$PAGES_BRANCH"
   )
+
+  rm -rf "$tmp_dir"
 }
 
 configure_pages() {
